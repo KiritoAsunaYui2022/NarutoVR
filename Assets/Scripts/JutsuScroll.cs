@@ -14,6 +14,8 @@ public class JutsuScroll : MonoBehaviour
 
     public Transform playerBody;
 
+    public SoundEffects soundEffect; 
+
 
     //Game Logic 
     //Jutsu
@@ -288,7 +290,7 @@ public class JutsuScroll : MonoBehaviour
                 print(windBulletGust);
 
                 GameObject windBulletA;
-                windBulletA = Instantiate(windBullet, fist.position, fist.rotation) as GameObject;
+                windBulletA = Instantiate(windBullet, fist.position, fist.rotation) as GameObject; 
                 windBulletA.GetComponent<Rigidbody>().AddForce(windBulletA.transform.forward * windBulletVelocity); 
                 
                 if (windBulletGust == 5f) 
@@ -360,10 +362,12 @@ public class JutsuScroll : MonoBehaviour
             astra = "";
         }
 
-        if (astra == "MonkeyMonkeyMonkey")
+        //RatTigerDogOxHareTiger 
+        if (astra == "RatTigerDogOxHareTiger")
         {
             print("Fire Phoenix Jutsu"); 
             phoenixClones.Clear();
+            soundEffect.PlayJutsuSound(); 
             astra_check = "";
             moveOn = true;
             firePhoenixFlowerStyleJutsu = true;
@@ -387,7 +391,7 @@ public class JutsuScroll : MonoBehaviour
         }
 
         //SerpantRamRatSerpantTiger
-        if (astra == "MonkeyBirdMonkey")
+        if (astra == "SerpantRamRatSerpantTiger")
         {
             print("Earth Style Stone Fist Jutsu");
             //Something?
@@ -397,7 +401,7 @@ public class JutsuScroll : MonoBehaviour
         }
 
         //RamTigerSerpantDogRatOxHorse 
-        if (astra == "BirdMonkeyBird")
+        if (astra == "RamTigerSerpantDogRatOxHorse")
         {
             print("Earth Style Earth Barrier Jutsu");
             //Something?
@@ -406,8 +410,8 @@ public class JutsuScroll : MonoBehaviour
             earthBarrierJutsu = true;
         }
 
-
-        if (astra == "SerpantSerpantSerpant" && touchGround == true)
+        //RamDogOxSerpant
+        if (astra == "RamDogOxSerpant" && touchGround == true)
         {
             print("Earth Style Mud Wall Jutsu");
             //Something?
@@ -417,7 +421,8 @@ public class JutsuScroll : MonoBehaviour
         }
 
 
-        if (astra == "DogDogDog")
+        //SerpantRamMonkeyBoarHorseTiger
+        if (astra == "SerpantRamMonkeyBoarHorseTiger")
         {
             print("Fireball Jutsu");
             //Something?
@@ -426,7 +431,8 @@ public class JutsuScroll : MonoBehaviour
             fireStyleFireballJutsu = true;
         }
 
-        if(astra == "DogSerpantDog")
+        //RatHareDog
+        if(astra == "RatHareDog")
         {
             print("Wind Bullet Jutsu");
             //Something?
@@ -436,7 +442,8 @@ public class JutsuScroll : MonoBehaviour
         }
 
 
-        if(astra == "MonkeyDogMonkey")
+        //RatDogTiger 
+        if(astra == "RatDogTiger")
         {
             print("Wood Dome Jutsu");
             //Something?
@@ -447,6 +454,6 @@ public class JutsuScroll : MonoBehaviour
 
 
         print("Astra: " + astra);
-        //print("Astra_Check: " + astra_check);
+        //print("Astra_Check: " + astra_check); 
     }
 }

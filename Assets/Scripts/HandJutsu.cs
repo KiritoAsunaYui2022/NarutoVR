@@ -127,6 +127,10 @@ public class HandJutsu : MonoBehaviour
     public bool tigerPos;
 
 
+    //Hand Seal Sound Effect 
+    public SoundEffects soundEffect; 
+
+
 
 
     //Consistently tests the distance between the two controllers (L & R) with a simple function and if function 
@@ -323,6 +327,7 @@ public class HandJutsu : MonoBehaviour
 
             animations.monkey = true;
             scroll.astra += "Monkey";
+            soundEffect.playHandSealSound(); 
 
             monkeyJutsu = disAreaOne ? monkeyJutsu = true : monkeyJutsu = false; 
 
@@ -747,6 +752,6 @@ public class HandJutsu : MonoBehaviour
     public void Update()
     { 
         angleOfControllers();
-        distanceOfControllers();   
+        distanceOfControllers(); 
     }
 }

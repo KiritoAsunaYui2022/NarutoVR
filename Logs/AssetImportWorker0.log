@@ -1,0 +1,860 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19044.1826; Version 2009; 64bit' Language: 'en' Physical Memory: 12199 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Chase Monson/Desktop/UnityProjects/NarutoVR [Build]
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52952
+Successfully changed project path to: C:/Users/Chase Monson/Desktop/UnityProjects/NarutoVR [Build]
+C:/Users/Chase Monson/Desktop/UnityProjects/NarutoVR [Build]
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 87.31 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 1.44 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Chase Monson/Desktop/UnityProjects/NarutoVR [Build]/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x5917)
+    Vendor:   
+    VRAM:     6099 MB
+    Driver:   27.20.100.9171
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002760 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 57.48 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.652 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007648 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.61.0
+Mono: successfully reloaded assembly
+- Completed reload, in  1.361 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2092 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.2 MB.
+System memory in use after: 102.2 MB.
+
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2510.
+Total: 2.381200 ms (FindLiveObjects: 0.191700 ms CreateObjectMapping: 0.081400 ms MarkObjects: 1.988400 ms  DeleteObjects: 0.118700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/HandStuff/NaturoHandScripts/HandAnimation.cs
+  artifactKey: Guid(48b420ecd0662ec4f94dbd1f528e7247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NaturoHandScripts/HandAnimation.cs using Guid(48b420ecd0662ec4f94dbd1f528e7247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278bca193d1543b61f6e0c335796ad18') in 0.046749 seconds
+  Import took 0.052046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1417.234942 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/Dragon Left.anim
+  artifactKey: Guid(2c354c52c5565e94182914b96e21c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/Dragon Left.anim using Guid(2c354c52c5565e94182914b96e21c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923c8cff667395e4724c53035131b21a') in 0.029358 seconds
+  Import took 0.034886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001527 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/Dragon Left.anim
+  artifactKey: Guid(2c354c52c5565e94182914b96e21c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/Dragon Left.anim using Guid(2c354c52c5565e94182914b96e21c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923c8cff667395e4724c53035131b21a') in 0.004576 seconds
+  Import took 0.010332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.359773 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/DragonLeft.anim
+  artifactKey: Guid(2c354c52c5565e94182914b96e21c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/DragonLeft.anim using Guid(2c354c52c5565e94182914b96e21c259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870695a00601b3db5d01bd810c64a58c') in 0.011057 seconds
+  Import took 0.018250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.282970 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller
+  artifactKey: Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller using Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb9667d99b82895cb276f4457a38159') in 0.023013 seconds
+  Import took 0.029100 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008208 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.364 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.8 MB.
+System memory in use after: 95.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2514.
+Total: 2.506000 ms (FindLiveObjects: 0.220600 ms CreateObjectMapping: 0.075400 ms MarkObjects: 2.132000 ms  DeleteObjects: 0.077100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1999.032446 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/HorseLeft.anim
+  artifactKey: Guid(638f4aa3b5f98984db8fcfae001f8a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/HorseLeft.anim using Guid(638f4aa3b5f98984db8fcfae001f8a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60704622a87489d994b80981d8ca83d4') in 0.032885 seconds
+  Import took 0.038419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58996.243052 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/OxLeft.anim
+  artifactKey: Guid(1b82d22143e6fd74fa0a6fc0c900ffe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/OxLeft.anim using Guid(1b82d22143e6fd74fa0a6fc0c900ffe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8ddd0ecfa85a2263ec408ca1f0037d') in 0.011375 seconds
+  Import took 0.017156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 243.506781 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/hands_L_hand 1.controller
+  artifactKey: Guid(37725c81d8993394b91969854b61b150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/hands_L_hand 1.controller using Guid(37725c81d8993394b91969854b61b150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4f7ca933dd5eac08672e795d666e26') in 0.012984 seconds
+  Import took 0.019459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001872 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/hands_L_hand 1.controller
+  artifactKey: Guid(37725c81d8993394b91969854b61b150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/hands_L_hand 1.controller using Guid(37725c81d8993394b91969854b61b150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4f7ca933dd5eac08672e795d666e26') in 0.004919 seconds
+  Import took 0.009690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.830306 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/hands_L_hand.controller
+  artifactKey: Guid(c3e6cdd761902ad47b71909774161574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/hands_L_hand.controller using Guid(c3e6cdd761902ad47b71909774161574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4cfae6bcfd055a224bd1660b3ac75e9') in 0.011807 seconds
+  Import took 0.016487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 723.227782 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/RamLeft.anim
+  artifactKey: Guid(47302cd04636bd94b9fa7b8c6bad02f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/RamLeft.anim using Guid(47302cd04636bd94b9fa7b8c6bad02f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e13a369e615705f6aa53135061b9cf9') in 0.010572 seconds
+  Import took 0.015130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10342.896926 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/RatLeft.anim
+  artifactKey: Guid(5e78ad54de8eab745a5d9604848ed6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/RatLeft.anim using Guid(5e78ad54de8eab745a5d9604848ed6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1851450202d59809127f61504a34bcec') in 0.010925 seconds
+  Import took 0.016514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5709.740453 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/SerpantLeft.anim
+  artifactKey: Guid(ba805bce4204225488bda904ae883447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/SerpantLeft.anim using Guid(ba805bce4204225488bda904ae883447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8f776e712fe4d05db0d9be2234b8d1') in 0.012029 seconds
+  Import took 0.017190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1394.150140 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/TigerLeft.anim
+  artifactKey: Guid(f64220fe70a52f84ba7c511bf7f60c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/TigerLeft.anim using Guid(f64220fe70a52f84ba7c511bf7f60c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6498ddfbfe7a02caa441b01a519d439') in 0.012112 seconds
+  Import took 0.019722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1100.335775 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/HareLeft.anim
+  artifactKey: Guid(a1391c11691498e4ba4f6e58099bb269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/HareLeft.anim using Guid(a1391c11691498e4ba4f6e58099bb269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9dd5ff4810fc7511384fb11f6c360d2') in 0.014729 seconds
+  Import took 0.021222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000956 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/HareLeft.anim
+  artifactKey: Guid(a1391c11691498e4ba4f6e58099bb269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/HareLeft.anim using Guid(a1391c11691498e4ba4f6e58099bb269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9dd5ff4810fc7511384fb11f6c360d2') in 0.004911 seconds
+  Import took 0.009259 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.564562 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.077 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.8 MB.
+System memory in use after: 95.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2518.
+Total: 3.890900 ms (FindLiveObjects: 0.236000 ms CreateObjectMapping: 0.082500 ms MarkObjects: 2.928500 ms  DeleteObjects: 0.642400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 4199.299151 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller
+  artifactKey: Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller using Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607184aad49b8a269964dc3cd3dece60') in 0.112227 seconds
+  Import took 0.118501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 102.337176 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/DogLeft.anim
+  artifactKey: Guid(251fc349663477640bd00dca09c8ec5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/DogLeft.anim using Guid(251fc349663477640bd00dca09c8ec5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e94e768493426306aea02e34d429978') in 0.014710 seconds
+  Import took 0.021432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 427.182029 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller
+  artifactKey: Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller using Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5099ceac11dfcfd9ccee676370fb4968') in 0.039500 seconds
+  Import took 0.047263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 428.385624 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller
+  artifactKey: Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller using Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b40eb05b62fe17398721b634d7a31b9') in 0.021206 seconds
+  Import took 0.027121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.266930 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller
+  artifactKey: Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Left/LeftHand.controller using Guid(aa710b22dda2c07438851044eda8951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aafeeadd23f606562f8f222df7bb9732') in 0.024351 seconds
+  Import took 0.032651 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.033919 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.361 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 95.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2522.
+Total: 27.558100 ms (FindLiveObjects: 0.395100 ms CreateObjectMapping: 0.174000 ms MarkObjects: 26.882900 ms  DeleteObjects: 0.104500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 58699.135833 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/RightHand.controller
+  artifactKey: Guid(47f7ebbf94c72e64b9c763fed627a6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/RightHand.controller using Guid(47f7ebbf94c72e64b9c763fed627a6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b327d9a8e7131ffaff78a5eb790290a5') in 0.058566 seconds
+  Import took 0.067184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.054139 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/MonkeyRight.anim
+  artifactKey: Guid(b8bcd8450fedc2c409a7fb2c838803b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/MonkeyRight.anim using Guid(b8bcd8450fedc2c409a7fb2c838803b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6a76ac4791013c56f6bdd6823268d7') in 0.015693 seconds
+  Import took 0.022393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014134 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/MonkeyRight.anim
+  artifactKey: Guid(b8bcd8450fedc2c409a7fb2c838803b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/MonkeyRight.anim using Guid(b8bcd8450fedc2c409a7fb2c838803b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6a76ac4791013c56f6bdd6823268d7') in 0.006802 seconds
+  Import took 0.013174 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021660 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.266 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2526.
+Total: 3.819800 ms (FindLiveObjects: 0.462700 ms CreateObjectMapping: 0.244700 ms MarkObjects: 2.949800 ms  DeleteObjects: 0.160500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 104.397259 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/BirdRight.anim
+  artifactKey: Guid(ffbaddef507d2c140aec03925cf94534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/BirdRight.anim using Guid(ffbaddef507d2c140aec03925cf94534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42bb31b41628439064917d8311a1f6f6') in 0.028396 seconds
+  Import took 0.033503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000767 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/BirdRight.anim
+  artifactKey: Guid(ffbaddef507d2c140aec03925cf94534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/BirdRight.anim using Guid(ffbaddef507d2c140aec03925cf94534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42bb31b41628439064917d8311a1f6f6') in 0.005099 seconds
+  Import took 0.010601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3345.878683 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/BoarRight.anim
+  artifactKey: Guid(cebca49a0a88802458d0c837894bc711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/BoarRight.anim using Guid(cebca49a0a88802458d0c837894bc711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c44eb16ce8d3f4ffaa0e0589fe756023') in 0.011152 seconds
+  Import took 0.015863 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.523871 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.61 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.803 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.8 MB.
+System memory in use after: 95.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2530.
+Total: 6.402000 ms (FindLiveObjects: 0.519900 ms CreateObjectMapping: 0.207400 ms MarkObjects: 5.415400 ms  DeleteObjects: 0.257100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007627 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.290 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2534.
+Total: 2.771000 ms (FindLiveObjects: 0.222000 ms CreateObjectMapping: 0.079100 ms MarkObjects: 2.363800 ms  DeleteObjects: 0.105100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 612.230023 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/DragonRight.anim
+  artifactKey: Guid(06b57324e8f67e94cbcf8f017e2e316a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/DragonRight.anim using Guid(06b57324e8f67e94cbcf8f017e2e316a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd3560349484033f95a9cd8821e5eba') in 0.024487 seconds
+  Import took 0.028955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1167.337077 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/HareRight.anim
+  artifactKey: Guid(882574fcec3eff8459ac4032a2b33208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/HareRight.anim using Guid(882574fcec3eff8459ac4032a2b33208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84e42a2788ef7cf92c723cde75f5a251') in 0.013169 seconds
+  Import took 0.018433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 351.356567 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/HorseRight.anim
+  artifactKey: Guid(fc330ef7bef519e4f884ba0d84af2f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/HorseRight.anim using Guid(fc330ef7bef519e4f884ba0d84af2f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1bd0d30c3e184319ff95875c73316c') in 0.010910 seconds
+  Import took 0.015963 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007536 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.282 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2538.
+Total: 2.875700 ms (FindLiveObjects: 0.229900 ms CreateObjectMapping: 0.092200 ms MarkObjects: 2.461000 ms  DeleteObjects: 0.091000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 322.877101 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/RamRight.anim
+  artifactKey: Guid(1bfaea66cd81c4245ae0656d67c5da52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/RamRight.anim using Guid(1bfaea66cd81c4245ae0656d67c5da52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7c2d77e1090039fa641357545dfdb2') in 0.031555 seconds
+  Import took 0.035810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 190.562037 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/RatRight.anim
+  artifactKey: Guid(774bbb14c97d8b54e8d019d540916464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/RatRight.anim using Guid(774bbb14c97d8b54e8d019d540916464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c002ec925cfeb5163327863dcbce04') in 0.010563 seconds
+  Import took 0.016024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 527.669313 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/SerpantRight.anim
+  artifactKey: Guid(2bad59901a767554bbf94caa7bffccd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/SerpantRight.anim using Guid(2bad59901a767554bbf94caa7bffccd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e01569a362e3da85c908912cea9a4f6') in 0.012190 seconds
+  Import took 0.018073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 132.515294 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/TigerRight.anim
+  artifactKey: Guid(2e753be96a64157429be4a7069207774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/TigerRight.anim using Guid(2e753be96a64157429be4a7069207774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b5a0a71bb7c55cd3afb846e92b5b3d') in 0.011945 seconds
+  Import took 0.017404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3598.843750 seconds.
+  path: Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/RightHand.controller
+  artifactKey: Guid(47f7ebbf94c72e64b9c763fed627a6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HandStuff/NarutoAnimations/Hand Poses/Right/RightHand.controller using Guid(47f7ebbf94c72e64b9c763fed627a6ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b16815dd9c1072661783654ef18b45') in 0.041953 seconds
+  Import took 0.050216 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011710 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.343 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2542.
+Total: 2.366400 ms (FindLiveObjects: 0.205600 ms CreateObjectMapping: 0.079400 ms MarkObjects: 1.949100 ms  DeleteObjects: 0.130700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009732 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.449 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2546.
+Total: 2.417200 ms (FindLiveObjects: 0.227700 ms CreateObjectMapping: 0.075700 ms MarkObjects: 1.991400 ms  DeleteObjects: 0.121300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007322 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.468 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.9 MB.
+System memory in use after: 96.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2550.
+Total: 2.453300 ms (FindLiveObjects: 0.251500 ms CreateObjectMapping: 0.087600 ms MarkObjects: 2.007500 ms  DeleteObjects: 0.105400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008661 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.336 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2554.
+Total: 2.509200 ms (FindLiveObjects: 0.200400 ms CreateObjectMapping: 0.080000 ms MarkObjects: 2.144700 ms  DeleteObjects: 0.082900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 14311.138155 seconds.
+  path: Assets/Sound Effects
+  artifactKey: Guid(c73317a8864ea004c97730103ec38f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound Effects using Guid(c73317a8864ea004c97730103ec38f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7396c7b5b6ff1328d08e71fc484f7486') in 0.020943 seconds
+  Import took 0.026704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.534959 seconds.
+  path: Assets/Sound Effects/Hand Seals Sound Effect.mp3
+  artifactKey: Guid(d146b3dabb9a4b94e931b5d6697cc9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound Effects/Hand Seals Sound Effect.mp3 using Guid(d146b3dabb9a4b94e931b5d6697cc9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5402b0d2053fa5c330faad152ea9bf06') in 0.131596 seconds
+  Import took 0.135139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Sound Effects/Jutsu Sound Effect.mp3
+  artifactKey: Guid(c05d4718a365be943bf29fcf51095480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound Effects/Jutsu Sound Effect.mp3 using Guid(c05d4718a365be943bf29fcf51095480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d8f5112d6b5f5bf2598cc2f1f5d577') in 0.014360 seconds
+  Import took 0.017611 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008696 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.342 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2020 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.0 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2567.
+Total: 2.756200 ms (FindLiveObjects: 0.208200 ms CreateObjectMapping: 0.083000 ms MarkObjects: 2.348900 ms  DeleteObjects: 0.114300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 3205.396181 seconds.
+  path: Assets/Scripts/SoundEffects.cs
+  artifactKey: Guid(f4afa5f682d92c6449844bbb2a3b97c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SoundEffects.cs using Guid(f4afa5f682d92c6449844bbb2a3b97c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aabf6c89fb5a728f82ac06133b8e55f') in 0.018851 seconds
+  Import took 0.029759 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009186 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.291 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2021 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.0 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2572.
+Total: 3.282000 ms (FindLiveObjects: 0.225600 ms CreateObjectMapping: 0.077100 ms MarkObjects: 2.829600 ms  DeleteObjects: 0.148100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 117.649260 seconds.
+  path: Assets/Scripts/SoundEffects.cs
+  artifactKey: Guid(f4afa5f682d92c6449844bbb2a3b97c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SoundEffects.cs using Guid(f4afa5f682d92c6449844bbb2a3b97c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2800a9120cd33b1584da04bed0409bea') in 0.004989 seconds
+  Import took 0.009535 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010275 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.415 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2021 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.0 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2576.
+Total: 3.963400 ms (FindLiveObjects: 0.213600 ms CreateObjectMapping: 0.081000 ms MarkObjects: 3.510300 ms  DeleteObjects: 0.157100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 308.807180 seconds.
+  path: Assets/Scripts/SoundEffects.cs
+  artifactKey: Guid(f4afa5f682d92c6449844bbb2a3b97c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SoundEffects.cs using Guid(f4afa5f682d92c6449844bbb2a3b97c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c98adb6097b042dc3aff2eb41d29f44') in 0.005546 seconds
+  Import took 0.009339 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007313 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.396 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2021 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 99.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2580.
+Total: 2.826400 ms (FindLiveObjects: 0.250900 ms CreateObjectMapping: 0.079700 ms MarkObjects: 2.417700 ms  DeleteObjects: 0.077200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009140 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.410 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 2021 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.0 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2584.
+Total: 2.561300 ms (FindLiveObjects: 0.202200 ms CreateObjectMapping: 0.079100 ms MarkObjects: 2.184600 ms  DeleteObjects: 0.094200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007780 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.429 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2021 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.0 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2588.
+Total: 2.719800 ms (FindLiveObjects: 0.225100 ms CreateObjectMapping: 0.094000 ms MarkObjects: 2.221900 ms  DeleteObjects: 0.176800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010817 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.608 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2021 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.0 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2592.
+Total: 2.974100 ms (FindLiveObjects: 0.231100 ms CreateObjectMapping: 0.079800 ms MarkObjects: 2.535700 ms  DeleteObjects: 0.126700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010157 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.437 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2021 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.1 MB.
+System memory in use after: 99.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 2596.
+Total: 2.341600 ms (FindLiveObjects: 0.214300 ms CreateObjectMapping: 0.078700 ms MarkObjects: 1.975400 ms  DeleteObjects: 0.072400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
