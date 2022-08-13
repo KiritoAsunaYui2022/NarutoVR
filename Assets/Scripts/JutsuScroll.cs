@@ -5,7 +5,7 @@ using UnityEngine;
 public class JutsuScroll : MonoBehaviour
 {
 
-    public HandJutsu hands;
+    public HandSeals hands; 
     public string astra = "";
     public string astra_check = "";
 
@@ -107,14 +107,13 @@ public class JutsuScroll : MonoBehaviour
             print("Astra: " + astra);
             astra_check = astra;
         }
-
     }
 
     public void Jutsu()
     {
 
         if (firePhoenixFlowerStyleJutsu)
-        {//&& OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger)
+        {
             while (count >= 0f && OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
             {
                 count -= .1f;
@@ -128,7 +127,6 @@ public class JutsuScroll : MonoBehaviour
                     b = Instantiate(phoenix, fist.position, fist.rotation) as GameObject;
                     b.transform.rotation = Quaternion.RotateTowards(b.transform.rotation, phoenixFlock[i], spreadAngle);
                     b.GetComponent<Rigidbody>().AddForce(b.transform.forward * phoenixFireVel);
-                    //phoenixFireVel
                     print(phoenixFireVel);
                     Destroy(b, .7f);
                     break;
@@ -143,8 +141,6 @@ public class JutsuScroll : MonoBehaviour
                     count = 10f;
                 }
                 break;
-
-
             }
         }
 
@@ -272,7 +268,6 @@ public class JutsuScroll : MonoBehaviour
                 GameObject fireBall1;
                 fireBall1 = Instantiate(fireball, fireballPoint.position, fireballPoint.rotation) as GameObject;
                 fireBall1.GetComponent<Rigidbody>().AddForce(fireBall1.transform.forward * phoenixFireVel);
-                //print(fireball.transform.forward * fireballvelocity);
 
                 astra = "";
                 fireStyleFireballJutsu = false;
@@ -329,8 +324,6 @@ public class JutsuScroll : MonoBehaviour
 
     void FixedUpdate()
     {
-        //rightHand.transform.position = TEMPsphere.transform.position; 
-
         stoneFistLeft.transform.position = leftHand.transform.position;
         stoneFistLeft.transform.rotation = leftHand.transform.rotation;
 
@@ -350,9 +343,7 @@ public class JutsuScroll : MonoBehaviour
         {
             if (astra_check != astra)
             {
-                print("Astra: " + astra);
-                //print("S: " + buttonS);
-                //print("A: " + buttonA);
+                //print("Astra: " + astra);
                 astra_check = astra;
             }
         }
@@ -368,7 +359,6 @@ public class JutsuScroll : MonoBehaviour
             print("Fire Phoenix Jutsu");
             soundEffect.PlayJutsuSound(); 
             phoenixClones.Clear();
-            //astra_check = "";
             astra = ""; 
             moveOn = true;
             firePhoenixFlowerStyleJutsu = true;
@@ -378,7 +368,7 @@ public class JutsuScroll : MonoBehaviour
         if (astra == "BirdBirdBird" && limitShadowClone == false)
         {
             print("Shadow Clone Jutsu");
-            astra_check = "";
+            astra = "";
             moveOn = true;
             shadowCloneJutsu = true;
         }
@@ -396,7 +386,7 @@ public class JutsuScroll : MonoBehaviour
         {
             print("Earth Style Stone Fist Jutsu");
             //Something?
-            astra_check = "";
+            astra = "";
             moveOn = true;
             earthStyleStoneFistJutsu = true;
         }
@@ -406,7 +396,7 @@ public class JutsuScroll : MonoBehaviour
         {
             print("Earth Style Earth Barrier Jutsu");
             //Something?
-            astra_check = "";
+            astra = "";
             moveOn = true;
             earthBarrierJutsu = true;
         }
@@ -416,7 +406,7 @@ public class JutsuScroll : MonoBehaviour
         {
             print("Earth Style Mud Wall Jutsu");
             //Something?
-            astra_check = "";
+            astra = "";
             moveOn = true;
             earthStyleMudWallJutsu = true;
         }
@@ -427,7 +417,7 @@ public class JutsuScroll : MonoBehaviour
         {
             print("Fireball Jutsu");
             //Something?
-            astra_check = "";
+            astra = "";
             moveOn = true;
             fireStyleFireballJutsu = true;
         }
@@ -437,7 +427,7 @@ public class JutsuScroll : MonoBehaviour
         {
             print("Wind Bullet Jutsu");
             //Something?
-            astra_check = "";
+            astra = "";
             moveOn = true;
             windStyleVacuumBulletJutsu = true;
         }
@@ -448,13 +438,13 @@ public class JutsuScroll : MonoBehaviour
         {
             print("Wood Dome Jutsu");
             //Something?
-            astra_check = "";
+            astra = "";
             moveOn = true;
             woodStyleTreeDomeJutsu = true;
         }
 
 
-        print("Astra: " + astra);
+        //print("Astra: " + astra);
         //print("Astra_Check: " + astra_check); 
     }
 }
