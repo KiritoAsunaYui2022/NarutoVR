@@ -23,7 +23,7 @@ public class HandAnimation : MonoBehaviour
     public bool monkey;
     public bool bird;
     public bool ram;
-    public bool serpant;
+    public bool serpent;
     public bool tiger;
     public bool rat;
     public bool boar;
@@ -81,9 +81,9 @@ public class HandAnimation : MonoBehaviour
         RightHand.SetBool("Dragon", dragon);
         LeftHand.SetBool("Dragon", dragon);
 
-        RightHandPosition.transform.position = boar ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
+        RightHandPosition.transform.position = dragon ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
 
-        LeftHandPosition.transform.position = boar ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
+        LeftHandPosition.transform.position = dragon ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
     }
 
     public void HarePose()
@@ -91,9 +91,9 @@ public class HandAnimation : MonoBehaviour
         RightHand.SetBool("Hare", hare);
         LeftHand.SetBool("Hare", hare);
 
-        RightHandPosition.transform.position = boar ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
+        RightHandPosition.transform.position = hare ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
 
-        LeftHandPosition.transform.position = boar ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
+        LeftHandPosition.transform.position = hare ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
     }
 
     public void HorsePose()
@@ -101,9 +101,9 @@ public class HandAnimation : MonoBehaviour
         RightHand.SetBool("Horse", horse);
         LeftHand.SetBool("Horse", horse);
 
-        RightHandPosition.transform.position = boar ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
+        RightHandPosition.transform.position = horse ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
 
-        LeftHandPosition.transform.position = boar ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
+        LeftHandPosition.transform.position = horse ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
     }
 
     //Ox uses Monkey for Right Hand 
@@ -112,9 +112,9 @@ public class HandAnimation : MonoBehaviour
         RightHand.SetBool("Monkey", monkey);
         LeftHand.SetBool("Ox", ox);
 
-        RightHandPosition.transform.position = boar ? Vector3.Lerp(RightHandPosition.transform.position, top.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
+        RightHandPosition.transform.position = monkey ? Vector3.Lerp(RightHandPosition.transform.position, top.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
 
-        LeftHandPosition.transform.position = boar ? Vector3.Lerp(LeftHandPosition.transform.position, bottom.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
+        LeftHandPosition.transform.position = ox ? Vector3.Lerp(LeftHandPosition.transform.position, bottom.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
     }
 
     public void RamPose()
@@ -122,9 +122,9 @@ public class HandAnimation : MonoBehaviour
         RightHand.SetBool("Ram", ram);
         LeftHand.SetBool("Ram", ram);
 
-        RightHandPosition.transform.position = boar ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
+        RightHandPosition.transform.position = ram ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
 
-        LeftHandPosition.transform.position = boar ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
+        LeftHandPosition.transform.position = ram ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
     }
 
     public void RatPose()
@@ -132,19 +132,19 @@ public class HandAnimation : MonoBehaviour
         RightHand.SetBool("Rat", rat);
         LeftHand.SetBool("Rat", rat);
 
-        RightHandPosition.transform.position = boar ? Vector3.Lerp(RightHandPosition.transform.position, top.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
+        RightHandPosition.transform.position = rat ? Vector3.Lerp(RightHandPosition.transform.position, top.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
 
-        LeftHandPosition.transform.position = boar ? Vector3.Lerp(LeftHandPosition.transform.position, bottom.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
+        LeftHandPosition.transform.position = rat ? Vector3.Lerp(LeftHandPosition.transform.position, bottom.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
     }
 
-    public void SerpantPose()
+    public void SerpentPose()
     {
-        RightHand.SetBool("Serpant", serpant);
-        LeftHand.SetBool("Serpant", serpant);
+        RightHand.SetBool("Serpent", serpent);
+        LeftHand.SetBool("Serpent", serpent);
 
-        RightHandPosition.transform.position = boar ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
+        RightHandPosition.transform.position = serpent ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
 
-        LeftHandPosition.transform.position = boar ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
+        LeftHandPosition.transform.position = serpent ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
     }
 
     public void TigerPose()
@@ -152,9 +152,9 @@ public class HandAnimation : MonoBehaviour
         RightHand.SetBool("Tiger", tiger);
         LeftHand.SetBool("Tiger", tiger);
 
-        RightHandPosition.transform.position = boar ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
+        RightHandPosition.transform.position = tiger ? Vector3.Lerp(RightHandPosition.transform.position, right.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(RightHandPosition.transform.position, RightHandAnchor.transform.position, 5f * Time.deltaTime);
 
-        LeftHandPosition.transform.position = boar ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
+        LeftHandPosition.transform.position = tiger ? Vector3.Lerp(LeftHandPosition.transform.position, left.transform.position, 5f * Time.deltaTime) : Vector3.Lerp(LeftHandPosition.transform.position, LeftHandAnchor.transform.position, 5f * Time.deltaTime);
     }
     
     public void Update() 
@@ -169,7 +169,7 @@ public class HandAnimation : MonoBehaviour
         OxPose(); 
         RamPose(); 
         RatPose(); 
-        SerpantPose(); 
+        SerpentPose(); 
         TigerPose(); 
     }
 }

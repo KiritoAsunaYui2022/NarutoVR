@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - ONSPSettings
     - OvrAvatar
     - OvrAvatarSettings
+    - SoundEffects
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
     - OVRConfig
@@ -24,6 +25,9 @@ ScriptsOnlyBuild:
     - OVRPlayerController
     - OVRSceneSampleController
     - OVRScreenFade
+    Unity.CollabProxy.Editor.dll:
+    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
+    - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -47,7 +51,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateMachineInspector
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -91,6 +94,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -130,43 +137,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 3098}
     - Class: 114
-      Script: {instanceID: 3202}
+      Script: {instanceID: 3116}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3204}
     - Class: 114
-      Script: {instanceID: 3906}
+      Script: {instanceID: 3358}
     - Class: 114
-      Script: {instanceID: 4342}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 4504}
+      Script: {instanceID: 4346}
     - Class: 114
-      Script: {instanceID: 4586}
+      Script: {instanceID: 4508}
     - Class: 114
-      Script: {instanceID: 4612}
+      Script: {instanceID: 4590}
     - Class: 114
-      Script: {instanceID: 4644}
+      Script: {instanceID: 4616}
     - Class: 114
-      Script: {instanceID: 4662}
+      Script: {instanceID: 4648}
     - Class: 114
-      Script: {instanceID: 4730}
+      Script: {instanceID: 4666}
     - Class: 114
-      Script: {instanceID: 4794}
+      Script: {instanceID: 4734}
     - Class: 114
-      Script: {instanceID: 4880}
+      Script: {instanceID: 4798}
     - Class: 114
-      Script: {instanceID: 4938}
+      Script: {instanceID: 4884}
     - Class: 114
-      Script: {instanceID: 5104}
+      Script: {instanceID: 4942}
     - Class: 114
-      Script: {instanceID: 5402}
+      Script: {instanceID: 5108}
     - Class: 114
-      Script: {instanceID: 5422}
+      Script: {instanceID: 5406}
     - Class: 114
-      Script: {instanceID: 18236}
+      Script: {instanceID: 5426}
+    - Class: 114
+      Script: {instanceID: 18256}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -778,6 +787,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.LipSync.dll
     namespaceName: 
     className: LipSyncDemo_SetCurrentTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 356f1b3481f147a8351a855fa472cf2f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundEffects
   - hash:
       serializedVersion: 2
       Hash: 0182aac3fd8bfdeff27021b9548c3a6a
@@ -1518,7 +1533,7 @@ ScriptsOnlyBuild:
     className: OVRGazePointer
   - hash:
       serializedVersion: 2
-      Hash: 6346de412ef8f332c1a60cf290cffa58
+      Hash: 1836ac67f15889da8a2b58c9830c5512
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: JutsuScroll
@@ -1782,7 +1797,7 @@ ScriptsOnlyBuild:
     className: TeleportOrientationHandler360
   - hash:
       serializedVersion: 2
-      Hash: 5cb4507da9ab6d2bd4fd6e3c485d629b
+      Hash: 5f15536ea1d9766afe90e6f79f01e691
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HandAnimation
@@ -1812,7 +1827,7 @@ ScriptsOnlyBuild:
     className: FingerTipPokeTool
   - hash:
       serializedVersion: 2
-      Hash: 4bd44d8850129cbf4f08ae5d95e0e337
+      Hash: 4ced27b16cff50566b91260c9a191dd0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HandJutsu

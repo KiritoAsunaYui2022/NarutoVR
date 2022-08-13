@@ -183,7 +183,7 @@ public class JutsuScroll : MonoBehaviour
         if (shadowCloneJutsu)
         {
             Vector3 flatAngleForward = new Vector3(playerHead.forward.x, 0f, playerHead.forward.z);
-            Quaternion newFacing = Quaternion.LookRotation(flatAngleForward, Vector3.up);
+            Quaternion newFacing = Quaternion.LookRotation(flatAngleForward, Vector3.up); 
             Vector3 flatAngleRight = new Vector3(flatAngleForward.z, 0f, -flatAngleForward.x);
 
             Vector3 spawnLocationA = playerHead.transform.position + (flatAngleForward) + (flatAngleRight * 4f);
@@ -365,10 +365,11 @@ public class JutsuScroll : MonoBehaviour
         //RatTigerDogOxHareTiger 
         if (astra == "RatTigerDogOxHareTiger")
         {
-            print("Fire Phoenix Jutsu"); 
-            phoenixClones.Clear();
+            print("Fire Phoenix Jutsu");
             soundEffect.PlayJutsuSound(); 
-            astra_check = "";
+            phoenixClones.Clear();
+            //astra_check = "";
+            astra = ""; 
             moveOn = true;
             firePhoenixFlowerStyleJutsu = true;
 
@@ -390,8 +391,8 @@ public class JutsuScroll : MonoBehaviour
             //moveOn = true;
         }
 
-        //SerpantRamRatSerpantTiger
-        if (astra == "SerpantRamRatSerpantTiger")
+        //SerpentRamRatSerpentTiger
+        if (astra == "SerpentRamRatSerpentTiger")
         {
             print("Earth Style Stone Fist Jutsu");
             //Something?
@@ -400,8 +401,8 @@ public class JutsuScroll : MonoBehaviour
             earthStyleStoneFistJutsu = true;
         }
 
-        //RamTigerSerpantDogRatOxHorse 
-        if (astra == "RamTigerSerpantDogRatOxHorse")
+        //RamTigerSerpentDogRatOxHorse 
+        if (astra == "RamTigerSerpentDogRatOxHorse") 
         {
             print("Earth Style Earth Barrier Jutsu");
             //Something?
@@ -410,8 +411,8 @@ public class JutsuScroll : MonoBehaviour
             earthBarrierJutsu = true;
         }
 
-        //RamDogOxSerpant
-        if (astra == "RamDogOxSerpant" && touchGround == true)
+        //RamDogOxSerpent
+        if (astra == "RamDogOxSerpent" && touchGround == true)
         {
             print("Earth Style Mud Wall Jutsu");
             //Something?
@@ -421,8 +422,8 @@ public class JutsuScroll : MonoBehaviour
         }
 
 
-        //SerpantRamMonkeyBoarHorseTiger
-        if (astra == "SerpantRamMonkeyBoarHorseTiger")
+        //SerpentRamMonkeyBoarHorseTiger
+        if (astra == "SerpentRamMonkeyBoarHorseTiger")
         {
             print("Fireball Jutsu");
             //Something?

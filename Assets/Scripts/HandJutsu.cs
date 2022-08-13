@@ -57,11 +57,11 @@ public class HandJutsu : MonoBehaviour
     public bool z_LeftRat;
     public bool x_RightRat;
 
-    //Serpant
-    public bool x_LeftSerpant;
-    public bool x_RightSerpant;
-    public bool z_LeftSerpant;
-    public bool z_RightSerpant;
+    //Serpent
+    public bool x_LeftSerpent;
+    public bool x_RightSerpent;
+    public bool z_LeftSerpent;
+    public bool z_RightSerpent;
 
     //Boar
     public bool x_RightBoar;
@@ -120,8 +120,8 @@ public class HandJutsu : MonoBehaviour
     public bool ratJutsu = false;
     public bool ratPos;
 
-    public bool serpantJutsu = false;
-    public bool serpantPos;
+    public bool serpentJutsu = false;
+    public bool serpentPos;
 
     public bool tigerJutsu = false;
     public bool tigerPos;
@@ -139,17 +139,7 @@ public class HandJutsu : MonoBehaviour
 
         distance = Vector3.Distance(controllerR.transform.position, controllerL.transform.position);
 
-        
-        if (distance < 0.25)
-        {
-            print("Distance Area One");
-            disAreaOne = true;
-        }
-
-        else
-        {
-            disAreaOne = false;
-        }
+        disAreaOne = (distance < 0.25); 
 
         if (distance > .25 && distance < 1.2)
         {
@@ -163,18 +153,7 @@ public class HandJutsu : MonoBehaviour
             disAreaTwo = false;
         }
 
-        //Was 1 
-        if(distance < 1.2)
-        {
-            //You are within the distance
-            disAreaThree = true;
-        }
-
-        else
-        {
-            disAreaThree = false;
-            print("Distance Area Three");
-        }
+        disAreaThree = (distance < 1.2);
 
     }
 
@@ -373,6 +352,7 @@ public class HandJutsu : MonoBehaviour
         {
             animations.bird = true;
             scroll.astra += "Bird";
+            soundEffect.playHandSealSound();
 
             birdJutsu = disAreaOne ? birdJutsu = true : birdJutsu = false; 
 
@@ -394,15 +374,16 @@ public class HandJutsu : MonoBehaviour
 
 //Ram ----------------
 
-        //Ram utilizes Serpant's Angle values, so a truth serum with button touches are all required
-        ramPos = (x_RightSerpant == true && z_RightSerpant == true && z_LeftSerpant == true && x_LeftSerpant == true && disAreaOne == true);
-        poseText.text = ramPos ? "Pose: True" : "Pose: False";
+        //Ram utilizes Serpent's Angle values, so a truth serum with button touches are all required
+        ramPos = (x_RightSerpent == true && z_RightSerpent == true && z_LeftSerpent == true && x_LeftSerpent == true && disAreaOne == true);
+        //poseText.text = ramPos ? "Pose: True" : "Pose: False";
 
 
         if (!OVRInput.Get(OVRInput.Button.Four) && !OVRInput.Get(OVRInput.Button.Three) && OVRInput.Get(OVRInput.Button.Two) && OVRInput.Get(OVRInput.Button.One) && OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) && !OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && !OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && !OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) && OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) && !ramJutsu && ramPos && scroll.moveOn)
         {
             animations.ram = true;
             scroll.astra += "Ram";
+            soundEffect.playHandSealSound();
 
             ramJutsu = disAreaOne ? ramJutsu = true : ramJutsu = false;
 
@@ -417,64 +398,66 @@ public class HandJutsu : MonoBehaviour
             justuText.text = "Jutsu: "; 
         }
 
-        distanceText.text = ramJutsu ? "Ram" : "!Ram!";
+        //distanceText.text = ramJutsu ? "Ram" : "!Ram!";
 
 //Ram ----------------
 
 
-//Serpant ----------------
+//Serpent ----------------
 
 
-        x_LeftSerpant = (controllerL.transform.localEulerAngles.x > 275f && controllerL.transform.localEulerAngles.x < 320f); //300 
-        x_RightText.text = x_RightSerpant ? "X_Right: True" : "X_Right: False"; //Text
+        x_LeftSerpent = (controllerL.transform.localEulerAngles.x > 275f && controllerL.transform.localEulerAngles.x < 320f); //300 
+        x_RightText.text = x_RightSerpent ? "X_Right: True" : "X_Right: False"; //Text
 
 
-        z_LeftSerpant = (controllerL.transform.localEulerAngles.z > 230f && controllerL.transform.localEulerAngles.z < 330f); //320
-        x_LeftText.text = x_LeftSerpant ? "X_Left: True" : "X_Left: False"; //Text 
+        z_LeftSerpent = (controllerL.transform.localEulerAngles.z > 230f && controllerL.transform.localEulerAngles.z < 330f); //320
+        x_LeftText.text = x_LeftSerpent ? "X_Left: True" : "X_Left: False"; //Text 
 
 
-        x_RightSerpant = (controllerR.transform.localEulerAngles.x > 280f && controllerR.transform.localEulerAngles.x < 320f); //300f
-        z_RightText.text = z_RightSerpant ? "Z_Right: True" : "Z_Right: False"; //Text
+        x_RightSerpent = (controllerR.transform.localEulerAngles.x > 280f && controllerR.transform.localEulerAngles.x < 320f); //300f
+        z_RightText.text = z_RightSerpent ? "Z_Right: True" : "Z_Right: False"; //Text
 
 
-        z_RightSerpant = (controllerR.transform.localEulerAngles.z > 50f && controllerR.transform.localEulerAngles.z < 130f);
-        z_LeftText.text = z_LeftSerpant ? "Z_Left: True" : "Z_Left: False"; //Text 
+        z_RightSerpent = (controllerR.transform.localEulerAngles.z > 50f && controllerR.transform.localEulerAngles.z < 130f);
+        z_LeftText.text = z_LeftSerpent ? "Z_Left: True" : "Z_Left: False"; //Text 
 
 
-        serpantPos = (x_RightSerpant == true && z_RightSerpant == true && z_LeftSerpant == true && x_LeftSerpant == true && disAreaOne == true);
-        //poseText.text = serpantPos ? "Pose: True" : "Pose: False";
+        serpentPos = (x_RightSerpent == true && z_RightSerpent == true && z_LeftSerpent == true && x_LeftSerpent == true && disAreaOne == true);
+        //poseText.text = SerpentPos ? "Pose: True" : "Pose: False";
 
-        if (OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) && OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) && OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) && !OVRInput.Get(OVRInput.Touch.One) && !OVRInput.Get(OVRInput.Touch.Two) && !OVRInput.Get(OVRInput.Touch.Three) && !OVRInput.Get(OVRInput.Touch.Four) && !serpantJutsu && serpantPos && scroll.moveOn)
+        if (OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) && OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) && OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) && !OVRInput.Get(OVRInput.Touch.One) && !OVRInput.Get(OVRInput.Touch.Two) && !OVRInput.Get(OVRInput.Touch.Three) && !OVRInput.Get(OVRInput.Touch.Four) && !serpentJutsu && serpentPos && scroll.moveOn)
         {
-            animations.serpant = true;
-            scroll.astra += "Serpant";
+            animations.serpent = true;
+            scroll.astra += "Serpent";
+            soundEffect.playHandSealSound();
 
-            serpantJutsu = disAreaOne ? serpantJutsu = true : serpantJutsu = false;
+            serpentJutsu = disAreaOne ? serpentJutsu = true : serpentJutsu = false;
 
             scroll.moveOn = false;
-            justuText.text = "Justu: Serpant";
+            justuText.text = "Justu: Serpent";
         }
 
-        if (!OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) || !OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) || !OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) || !OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) || !OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) || !OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) || OVRInput.Get(OVRInput.Touch.One) || OVRInput.Get(OVRInput.Touch.Two) || OVRInput.Get(OVRInput.Touch.Three) || OVRInput.Get(OVRInput.Touch.Four) || serpantJutsu && !serpantPos && !scroll.moveOn)
+        if (!OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) || !OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) || !OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) || !OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) || !OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) || !OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) || OVRInput.Get(OVRInput.Touch.One) || OVRInput.Get(OVRInput.Touch.Two) || OVRInput.Get(OVRInput.Touch.Three) || OVRInput.Get(OVRInput.Touch.Four) || serpentJutsu && !serpentPos && !scroll.moveOn)
         {
-            animations.serpant = false;
-            serpantJutsu = false;
+            animations.serpent = false;
+            serpentJutsu = false;
             justuText.text = "Jutsu: ";
         }
 
-//Serpant ----------------
+//Serpent ----------------
 
 
 //Tiger ------------------
 
-        //Tiger utilizes Serpant's Angle values, so a truth serum with button touches are all required
+        //Tiger utilizes Serpent's Angle values, so a truth serum with button touches are all required
 
-        tigerPos = (x_RightSerpant == true && z_RightSerpant == true && z_LeftSerpant == true && x_LeftSerpant == true && disAreaOne == true); 
+        tigerPos = (x_RightSerpent == true && z_RightSerpent == true && z_LeftSerpent == true && x_LeftSerpent == true && disAreaOne == true); 
         
         if (!OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) && !OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) && OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) && !OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && !OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.Get(OVRInput.Button.One) && OVRInput.Get(OVRInput.Button.Two) && OVRInput.Get(OVRInput.Button.Three) && OVRInput.Get(OVRInput.Button.Four) && !tigerJutsu && tigerPos && scroll.moveOn)
         {
             animations.tiger = true;
             scroll.astra += "Tiger";
+            soundEffect.playHandSealSound();
 
             tigerJutsu = disAreaOne ? tigerJutsu = true : tigerJutsu = false;
 
@@ -506,13 +489,14 @@ public class HandJutsu : MonoBehaviour
 
 
 
-        ratPos = (x_LeftRat == true && z_LeftRat == true && x_RightRat == true && x_RightSerpant == true && disAreaOne == true); 
+        ratPos = (x_LeftRat == true && z_LeftRat == true && x_RightRat == true && x_RightSerpent == true && disAreaOne == true); 
 
     
         if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) && !OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.One) && OVRInput.Get(OVRInput.Button.Two) && !OVRInput.Get(OVRInput.Touch.Three) && !OVRInput.Get(OVRInput.Touch.Four) && OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) && !ratJutsu && ratPos && scroll.moveOn)
         {
             animations.rat = true;
             scroll.astra += "Rat";
+            soundEffect.playHandSealSound();
 
             ratJutsu = disAreaOne ? ratJutsu = true : ratJutsu = false;
 
@@ -551,6 +535,7 @@ public class HandJutsu : MonoBehaviour
         {
             animations.boar = true;
             scroll.astra += "Boar";
+            soundEffect.playHandSealSound();
 
             boarJutsu = disAreaOne ? boarJutsu = true : boarJutsu = false;
 
@@ -592,8 +577,9 @@ public class HandJutsu : MonoBehaviour
         {
             animations.dragon = true;
             scroll.astra += "Dragon";
+            soundEffect.playHandSealSound();
 
-            dragonJutsu = disAreaOne ? dragonJutsu = true : dragonJutsu = false;
+            dragonJutsu = disAreaOne ? dragonJutsu = true : dragonJutsu = false; 
 
             scroll.moveOn = false;
             justuText.text = "Justu: Dragon";
@@ -632,6 +618,7 @@ public class HandJutsu : MonoBehaviour
         {
             animations.horse = true;
             scroll.astra += "Horse";
+            soundEffect.playHandSealSound();
 
             horseJutsu = disAreaOne ? horseJutsu = true : horseJutsu = false;
 
@@ -654,14 +641,15 @@ public class HandJutsu : MonoBehaviour
         z_RightOx = (controllerR.transform.localEulerAngles.z > 65f && controllerR.transform.localEulerAngles.z < 115f);
 
 
-        //Ox Utilizes Monkey for Right Hand, and Serpant for Left Hand
-        oxPos = (x_RightMonkey == true && z_RightOx == true && z_LeftSerpant == true && x_LeftSerpant == true && disAreaOne == true); 
+        //Ox Utilizes Monkey for Right Hand, and Serpent for Left Hand
+        oxPos = (x_RightMonkey == true && z_RightOx == true && z_LeftSerpent == true && x_LeftSerpent == true && disAreaOne == true); 
 
 
         if (OVRInput.Get(OVRInput.Touch.Three) && OVRInput.Get(OVRInput.Touch.Four) && OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) && !OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) && !OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && !OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) && !OVRInput.Get(OVRInput.Touch.One) && !OVRInput.Get(OVRInput.Touch.Two) && !OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) && !oxJutsu && oxPos && scroll.moveOn)
         {
             animations.ox = true;
             scroll.astra += "Ox";
+            soundEffect.playHandSealSound();
 
             oxJutsu = disAreaOne ? oxJutsu = true : oxJutsu = false;
 
@@ -691,6 +679,7 @@ public class HandJutsu : MonoBehaviour
         {
             animations.hare = true;
             scroll.astra += "Hare";
+            soundEffect.playHandSealSound();
 
             hareJutsu = disAreaOne ? hareJutsu = true : hareJutsu = false;
 
@@ -728,6 +717,7 @@ public class HandJutsu : MonoBehaviour
         {
             animations.dog = true;
             scroll.astra += "Dog";
+            soundEffect.playHandSealSound();
 
             dogJutsu = disAreaOne ? dogJutsu = true : dogJutsu = false;
 
@@ -752,6 +742,8 @@ public class HandJutsu : MonoBehaviour
     public void Update()
     { 
         angleOfControllers();
-        distanceOfControllers(); 
+        distanceOfControllers();
+
+        poseText.text = scroll.astra; 
     }
 }
