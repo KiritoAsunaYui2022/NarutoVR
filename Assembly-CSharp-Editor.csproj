@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CCCD873E-AB54-1C8D-DC45-6611D8FF0D85}</ProjectGuid>
+    <ProjectGuid>{35CF2BFA-D13C-06FF-BE64-B12B3CE7B933}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -743,35 +743,35 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{BF0628AA-E656-959A-AAC7-5A306D62D1C1}</Project>
+      <Project>{E03D0E2C-01CB-1908-6B08-C96DE94EEC9B}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{0742FA5E-7383-1BDD-E866-45871CC2ECD3}</Project>
+      <Project>{C4719A8E-20C1-F125-505B-1942F62BDD42}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{8A7DFE8C-7E36-C8C4-D19F-9212F5BD0A72}</Project>
+      <Project>{FCF1A7CC-C957-5DD8-75D1-FF93D749B582}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{B4AAA5DA-A4C9-09BC-CE26-CC82BDB0595A}</Project>
+      <Project>{CEA490F1-1080-F077-26CE-0C87A00DB0FE}</Project>
       <Name>Oculus.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{E9697016-B578-E6BC-7D88-10DAD9237844}</Project>
+      <Project>{FAC04A83-0FFD-8559-9A75-24D26F1DDCBC}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
-      <Project>{C9C08F8F-7543-24C9-6AFC-6C57A030D1D5}</Project>
+      <Project>{7FCBF267-54EF-9AA6-701A-519C5951B878}</Project>
       <Name>Oculus.LipSync.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{CED8174E-79CE-C148-2C44-77BF01FCED15}</Project>
+      <Project>{A05956DC-7FD2-1135-FB08-243253EE7981}</Project>
       <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.csproj">
-      <Project>{B617641F-43EE-9AC7-36AC-A4757441060E}</Project>
+      <Project>{2CCC70F2-DA37-9AA8-009D-B0D2214B7D8D}</Project>
       <Name>Oculus.LipSync</Name>
     </ProjectReference>
   </ItemGroup>
