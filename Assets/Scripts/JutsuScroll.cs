@@ -6,7 +6,7 @@ public class JutsuScroll : MonoBehaviour
 {
 
     public HandSeals hands; 
-    public string astra = "";
+    public string astra = ""; 
     public string astra_check = "";
 
 

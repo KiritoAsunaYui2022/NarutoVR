@@ -18,7 +18,7 @@ public class NarutoRun : MonoBehaviour
     public SoundEffects soundEffect;
 
     public TextMeshProUGUI height;
-    public TextMeshProUGUI handsAre; 
+    public TextMeshProUGUI handsAre;
 
     public bool runningStance = false;
 
@@ -35,10 +35,10 @@ public class NarutoRun : MonoBehaviour
     void Start()
     {
         handsBehind = GetComponent<SightOfHands>();
-        playerHeightAtStart = 1f;
         controller = GetComponent<OVRPlayerController>();
         controller.SetMoveScaleMultiplier(moveSpeedMultiplier);
     }
+
     public void areHandsBehind()
     {
         if (handsBehind == null)
@@ -76,10 +76,14 @@ public class NarutoRun : MonoBehaviour
     //I vote against this because it would only make sense if I had a full body rig that would show you naruto running, and the Quest will still ruin the illusion 
     //because once the controller irl comes into view, it'll kick you out of running since one of your hands are in front of you. 
     //There is a work around for this by sensing if your height is above a certain level, then it'll kick back into the original position. 
+
+    //I am 6"1' so the reading system is off because it reads I am 1.75 when in the headset. So just for now I am relying on that number to test the running system. 
+    //So if you're testing this, launch the mechanic and observe what you're height is, and set the "1.5f" in the if statements below to .2f lower than what you read. 
+    //Might work on a height measuring system. 
     public void narutoRun()
     {
         //Running 
-        if (runningStance && playerHeight < .7f)
+        if (runningStance && playerHeight < 1.5f)
         {
             //          child                          parent
             //rightHand.transform.parent = GameObject.Find("RightHandRunPos").transform;
@@ -89,11 +93,11 @@ public class NarutoRun : MonoBehaviour
             //leftHand.transform.position = LeftHandRunPos.transform.position; 
 
             handsAre.text = "Running";
-            controller.SetMoveScaleMultiplier(moveSpeedMultiplier * 4.0f); 
+            controller.SetMoveScaleMultiplier(moveSpeedMultiplier * 2f); 
         }
 
         //Walking 
-        if (!runningStance && playerHeight > .7f)
+        if (!runningStance && playerHeight > 1.5f)
         {
             //          child                          parent
             //rightHand.transform.parent = GameObject.Find("RightHandAnchor").transform;
@@ -116,6 +120,9 @@ public class NarutoRun : MonoBehaviour
         playerHeight = headPos.y;
         height.text = "Height: " + playerHeight; 
         areHandsBehind();
-        narutoRun(); 
+        narutoRun();
+
+        
+
     }
 }

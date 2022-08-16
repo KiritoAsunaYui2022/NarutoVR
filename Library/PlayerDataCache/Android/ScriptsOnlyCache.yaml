@@ -113,57 +113,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1982}
+      Script: {instanceID: 1986}
     - Class: 114
-      Script: {instanceID: 2088}
+      Script: {instanceID: 2092}
     - Class: 114
-      Script: {instanceID: 2154}
+      Script: {instanceID: 2158}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2178}
     - Class: 114
-      Script: {instanceID: 2222}
+      Script: {instanceID: 2226}
     - Class: 114
-      Script: {instanceID: 2234}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2422}
+      Script: {instanceID: 2426}
     - Class: 114
-      Script: {instanceID: 2464}
+      Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 2526}
+      Script: {instanceID: 2530}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3158}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3338}
     - Class: 114
-      Script: {instanceID: 3398}
+      Script: {instanceID: 3400}
     - Class: 114
-      Script: {instanceID: 3484}
+      Script: {instanceID: 3486}
     - Class: 114
-      Script: {instanceID: 3588}
+      Script: {instanceID: 3590}
     - Class: 114
-      Script: {instanceID: 3608}
+      Script: {instanceID: 3610}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 3636}
     - Class: 114
-      Script: {instanceID: 3734}
+      Script: {instanceID: 3736}
     - Class: 114
-      Script: {instanceID: 3916}
+      Script: {instanceID: 3918}
     - Class: 114
-      Script: {instanceID: 5208}
+      Script: {instanceID: 5210}
     - Class: 114
-      Script: {instanceID: 5392}
+      Script: {instanceID: 5394}
     - Class: 114
-      Script: {instanceID: 5486}
+      Script: {instanceID: 5488}
     - Class: 114
-      Script: {instanceID: 5516}
+      Script: {instanceID: 5518}
     - Class: 114
-      Script: {instanceID: 5556}
+      Script: {instanceID: 5558}
     - Class: 114
-      Script: {instanceID: 5580}
+      Script: {instanceID: 5582}
     - Class: 114
-      Script: {instanceID: 5658}
+      Script: {instanceID: 5660}
     - Class: 114
       Script: {instanceID: 5836}
     - Class: 114
@@ -175,7 +175,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 19460}
+      Script: {instanceID: 22102}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -263,12 +263,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: ArmModel
-  - hash:
-      serializedVersion: 2
-      Hash: 4316ec5845d16548d9ca7c958604a7db
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NarutoRunning
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -617,12 +611,6 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRSkeletonRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: 09bc140901342067c1c77516026b92ba
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VRController
   - hash:
       serializedVersion: 2
       Hash: cd06391f9225499fb9ea605ab668b015
@@ -1805,12 +1793,6 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.LipSync.dll
     namespaceName: 
     className: OVRLipSyncContextCanned
-  - hash:
-      serializedVersion: 2
-      Hash: ec71e73634f12a24b7a0906005e912fa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AreHandsBehind
   - hash:
       serializedVersion: 2
       Hash: 7200fc309b0ed180a81fb45217da51e4
