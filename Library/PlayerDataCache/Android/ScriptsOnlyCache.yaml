@@ -1,18 +1,17 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AreHandsBehind
-    - AveragePosition
+    - CenterPointPosition
     - Collisions
     - GroundCollider
     - HandAnimation
-    - HandJutsu
-    - JutsuPoses
+    - HandSeals
     - JutsuScroll
-    - NarutoRunning
+    - NarutoRun
     - ONSPSettings
     - OvrAvatar
     - OvrAvatarSettings
+    - SightOfHands
     - SoundEffects
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
@@ -25,9 +24,14 @@ ScriptsOnlyBuild:
     - OVRPlayerController
     - OVRSceneSampleController
     - OVRScreenFade
-    Unity.CollabProxy.Editor.dll:
-    - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
-    - Unity.Cloud.Collaborate.UserInterface.WindowCache
+    Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.SceneViewGridManager
+    - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
+    - UnityEditor.Tilemaps.TileDragAndDropManager
+    - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -48,10 +52,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -111,74 +113,74 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1724}
+      Script: {instanceID: 1982}
     - Class: 114
-      Script: {instanceID: 1852}
+      Script: {instanceID: 2088}
     - Class: 114
-      Script: {instanceID: 1942}
+      Script: {instanceID: 2154}
     - Class: 114
-      Script: {instanceID: 2000}
+      Script: {instanceID: 2174}
     - Class: 114
-      Script: {instanceID: 2016}
-    - Class: 114
-      Script: {instanceID: 2052}
-    - Class: 114
-      Script: {instanceID: 2060}
+      Script: {instanceID: 2222}
     - Class: 114
       Script: {instanceID: 2234}
     - Class: 114
-      Script: {instanceID: 2286}
+      Script: {instanceID: 2422}
     - Class: 114
-      Script: {instanceID: 2362}
+      Script: {instanceID: 2464}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2526}
     - Class: 114
-      Script: {instanceID: 2890}
+      Script: {instanceID: 2638}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 3156}
     - Class: 114
-      Script: {instanceID: 3004}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3098}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 3116}
+      Script: {instanceID: 3484}
     - Class: 114
-      Script: {instanceID: 3204}
+      Script: {instanceID: 3588}
     - Class: 114
-      Script: {instanceID: 3358}
+      Script: {instanceID: 3608}
     - Class: 114
-      Script: {instanceID: 3910}
+      Script: {instanceID: 3634}
     - Class: 114
-      Script: {instanceID: 4346}
+      Script: {instanceID: 3734}
     - Class: 114
-      Script: {instanceID: 4508}
+      Script: {instanceID: 3916}
     - Class: 114
-      Script: {instanceID: 4590}
+      Script: {instanceID: 5208}
     - Class: 114
-      Script: {instanceID: 4616}
+      Script: {instanceID: 5392}
     - Class: 114
-      Script: {instanceID: 4648}
+      Script: {instanceID: 5486}
     - Class: 114
-      Script: {instanceID: 4666}
+      Script: {instanceID: 5516}
     - Class: 114
-      Script: {instanceID: 4734}
+      Script: {instanceID: 5556}
     - Class: 114
-      Script: {instanceID: 4798}
+      Script: {instanceID: 5580}
     - Class: 114
-      Script: {instanceID: 4884}
+      Script: {instanceID: 5658}
     - Class: 114
-      Script: {instanceID: 4942}
+      Script: {instanceID: 5836}
     - Class: 114
-      Script: {instanceID: 5108}
+      Script: {instanceID: 5914}
     - Class: 114
-      Script: {instanceID: 5406}
+      Script: {instanceID: 6114}
     - Class: 114
-      Script: {instanceID: 5426}
+      Script: {instanceID: 6504}
     - Class: 114
-      Script: {instanceID: 18256}
+      Script: {instanceID: 6536}
+    - Class: 114
+      Script: {instanceID: 19460}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -191,6 +193,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 205
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -261,7 +265,7 @@ ScriptsOnlyBuild:
     className: ArmModel
   - hash:
       serializedVersion: 2
-      Hash: f609079143e7881726fee4fb9f1c6347
+      Hash: 4316ec5845d16548d9ca7c958604a7db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NarutoRunning
@@ -339,16 +343,16 @@ ScriptsOnlyBuild:
     className: OVROverlay
   - hash:
       serializedVersion: 2
-      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
-  - hash:
-      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
   - hash:
       serializedVersion: 2
       Hash: 8a874a8207a7664bdf44e61f28717254
@@ -393,22 +397,22 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 30faf1e024df75b64cf013ffe0da6171
+      Hash: c51d2a1569bb404a12e837742887b609
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRPlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: TMPro.Examples
-    className: SimpleScript
   - hash:
       serializedVersion: 2
       Hash: 7136ccb8970d7b5b2feefcae2f0d201d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoviePlayerSampleControls
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: TMPro.Examples
+    className: SimpleScript
   - hash:
       serializedVersion: 2
       Hash: 9f7fd5f1cdce7cb0cbd6b8430ff831c1
@@ -477,6 +481,12 @@ ScriptsOnlyBuild:
     className: TMP_DigitValidator
   - hash:
       serializedVersion: 2
+      Hash: df5cf4acd1f607a98866912c226fea81
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NarutoRun
+  - hash:
+      serializedVersion: 2
       Hash: efba9c5cd9fddc7e6f7b2a796da882fb
     assemblyName: Oculus.VR.dll
     namespaceName: 
@@ -493,6 +503,18 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrVoiceChat
     className: PlatformManager
+  - hash:
+      serializedVersion: 2
+      Hash: 303ad70ce203ad874efe2965d0fbcff9
+    assemblyName: Unity.Analytics.Tracker.dll
+    namespaceName: UnityEngine.Analytics
+    className: AnalyticsEventTracker
+  - hash:
+      serializedVersion: 2
+      Hash: 7fb9de8dcf73854b6b328eca1f7a6e6d
+    assemblyName: Unity.Analytics.Tracker.dll
+    namespaceName: UnityEngine.Analytics
+    className: AnalyticsTracker
   - hash:
       serializedVersion: 2
       Hash: 0cc2f729ed4885ca9c95ead34ce0e907
@@ -597,6 +619,12 @@ ScriptsOnlyBuild:
     className: OVRSkeletonRenderer
   - hash:
       serializedVersion: 2
+      Hash: 09bc140901342067c1c77516026b92ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VRController
+  - hash:
+      serializedVersion: 2
       Hash: cd06391f9225499fb9ea605ab668b015
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
@@ -643,6 +671,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HandGrabbing
+  - hash:
+      serializedVersion: 2
+      Hash: a325152ad9563ed900af221c132fea36
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: CoroutineExecutor
   - hash:
       serializedVersion: 2
       Hash: 2d75dd1753213123772f51e8448cd92e
@@ -729,6 +763,12 @@ ScriptsOnlyBuild:
     className: TrainButtonVisualController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Monetization.dll
+    namespaceName: UnityEngine.Monetization
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -789,7 +829,7 @@ ScriptsOnlyBuild:
     className: LipSyncDemo_SetCurrentTarget
   - hash:
       serializedVersion: 2
-      Hash: 356f1b3481f147a8351a855fa472cf2f
+      Hash: deb7ca9990e01a785f816066d0732f5b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SoundEffects
@@ -829,6 +869,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: InteractableRegistry
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Purchasing.Stores.dll
+    namespaceName: UnityEngine.Purchasing.Extension
+    className: UnityUtil
   - hash:
       serializedVersion: 2
       Hash: 188563bd802afb47e0cbc30688e95efa
@@ -900,7 +952,7 @@ ScriptsOnlyBuild:
       Hash: feabf7341950557d73fa92b1f3879ae7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: AveragePosition
+    className: CenterPointPosition
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1005,12 +1057,6 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: ToggleGroup
-  - hash:
-      serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1033,6 +1079,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NinjaJump
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
   - hash:
       serializedVersion: 2
       Hash: 8b9f42d72019bde2f9fe0667762eaff3
@@ -1065,16 +1117,16 @@ ScriptsOnlyBuild:
     className: StartMenu
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ONSPVersion
-  - hash:
-      serializedVersion: 2
       Hash: 6ccef259da155e93c32ed2677c987be7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TeleportTransitionWarp
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPVersion
   - hash:
       serializedVersion: 2
       Hash: 558b301491aa906446760eed78a170c5
@@ -1105,6 +1157,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Analytics.Editor.dll
+    namespaceName: UnityEditor.Analytics
+    className: AnalyticsEventTrackerEditor
   - hash:
       serializedVersion: 2
       Hash: 329a4358a2c40fe3c40f44951200bd91
@@ -1141,6 +1199,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.SimplePlatformSample
     className: DataEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 30eb564bd7e3b65ae966828be9e631a8
+    assemblyName: UnityEngine.Purchasing.Codeless.dll
+    namespaceName: UnityEngine.Purchasing
+    className: IAPButton
   - hash:
       serializedVersion: 2
       Hash: 8b9f42d72019bde2f9fe0667762eaff3
@@ -1198,6 +1262,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: ApplicationQuit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
@@ -1239,10 +1309,10 @@ ScriptsOnlyBuild:
     className: OvrAvatarHand
   - hash:
       serializedVersion: 2
-      Hash: f062dbae24eb89087ce616bf7225f0dd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JutsuPoses
+      Hash: 88e2c6f501bf5dead831a3e44c30de40
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Platform.Editor
+    className: BannerPlaceholder
   - hash:
       serializedVersion: 2
       Hash: 80b4a5e814c455bb563e97280d811bc1
@@ -1533,7 +1603,7 @@ ScriptsOnlyBuild:
     className: OVRGazePointer
   - hash:
       serializedVersion: 2
-      Hash: 1836ac67f15889da8a2b58c9830c5512
+      Hash: ee85fc1b300045c1701aae50ed3b99c0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: JutsuScroll
@@ -1773,12 +1843,6 @@ ScriptsOnlyBuild:
     className: OVROverlayCanvas
   - hash:
       serializedVersion: 2
-      Hash: bd97732d5ebcdb43e850d57584012ab1
-    assemblyName: Oculus.VR.dll
-    namespaceName: 
-    className: OVRCustomSkeleton
-  - hash:
-      serializedVersion: 2
       Hash: 2d6c48bcbb0c5879a658aca82ca624a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
@@ -1797,7 +1861,7 @@ ScriptsOnlyBuild:
     className: TeleportOrientationHandler360
   - hash:
       serializedVersion: 2
-      Hash: 5f15536ea1d9766afe90e6f79f01e691
+      Hash: 1a947d1b75a43c440db9f258112b98e7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HandAnimation
@@ -1815,10 +1879,22 @@ ScriptsOnlyBuild:
     className: SwingArmModel
   - hash:
       serializedVersion: 2
+      Hash: bd97732d5ebcdb43e850d57584012ab1
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRCustomSkeleton
+  - hash:
+      serializedVersion: 2
       Hash: a3b5c7ace69ce05da7ac8052564f6656
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TeleportPoint
+  - hash:
+      serializedVersion: 2
+      Hash: 06fe0c6f1328047d1063ec79291e7f8a
+    assemblyName: UnityEngine.Purchasing.Codeless.dll
+    namespaceName: UnityEngine.Purchasing
+    className: IAPListener
   - hash:
       serializedVersion: 2
       Hash: 17653b21203f576d6729f3490936652e
@@ -1827,10 +1903,10 @@ ScriptsOnlyBuild:
     className: FingerTipPokeTool
   - hash:
       serializedVersion: 2
-      Hash: 4ced27b16cff50566b91260c9a191dd0
+      Hash: 350bc33a34ed8e1a16a3a1980c8970dd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: HandJutsu
+    className: HandSeals
   - hash:
       serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
@@ -1947,16 +2023,22 @@ ScriptsOnlyBuild:
     className: RichPresenceSample
   - hash:
       serializedVersion: 2
-      Hash: cd06391f9225499fb9ea605ab668b015
-    assemblyName: Oculus.Platform.dll
-    namespaceName: Oculus.Platform.Samples.VrVoiceChat
-    className: VREyeRaycaster
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: Unity.Analytics.DataPrivacy.dll
+    namespaceName: UnityEngine.Analytics
+    className: DataPrivacyButton
   - hash:
       serializedVersion: 2
       Hash: 05e1dfe9d112a8058e2b93c0a658e3a7
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: FingerTipPokeToolView
+  - hash:
+      serializedVersion: 2
+      Hash: cd06391f9225499fb9ea605ab668b015
+    assemblyName: Oculus.Platform.dll
+    namespaceName: Oculus.Platform.Samples.VrVoiceChat
+    className: VREyeRaycaster
   - hash:
       serializedVersion: 2
       Hash: a4ab9532686dbd13bc2c5bb58a3781ce
@@ -1981,6 +2063,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.Platform.dll
     namespaceName: Oculus.Platform.Samples.VrHoops
     className: P2PNetworkBall
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Purchasing.Stores.dll
+    namespaceName: UnityEngine.Purchasing
+    className: AsyncWebUtil
   - hash:
       serializedVersion: 2
       Hash: c1313d723d19b50c00b55c8ce726b990
@@ -2140,5 +2228,5 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Jutsu.unity
-  playerPath: C:/Users/Chase Monson/Desktop/UnityProjects/NarutoVR [Build]/Builds/NarutoVR
+  playerPath: C:/Users/Chase Monson/Desktop/UnityProjects/NarutoVR/Builds/NarutoVR
     Alpha.apk

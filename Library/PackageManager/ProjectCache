@@ -5,21 +5,402 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637639844681618336
-    m_Hash: 308839693
+      ticks: 637960219095581902
+    m_Hash: 3229161948
   m_LockFileStatus:
     m_FilePath: C:/Users/Chase Monson/Desktop/UnityProjects/NarutoVR/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637639844681702651
-    m_Hash: 4139055328
+      ticks: 637960219112823125
+    m_Hash: 2995932103
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.unity.2d.sprite@1.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 2
+      resolvedPath: C:\Users\Chase Monson\Desktop\UnityProjects\NarutoVR\Library\PackageCache\com.unity.2d.sprite@1.0.0
+      assetPath: Packages/com.unity.2d.sprite
+      name: com.unity.2d.sprite
+      displayName: 2D Sprite
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: Use Unity Sprite Editor Window to create and edit Sprite asset
+        properties like pivot, borders and Physics shape
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        compatible:
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - sprite
+      - sprite editor window
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
+    - packageId: com.unity.2d.tilemap@1.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 2
+      resolvedPath: C:\Users\Chase Monson\Desktop\UnityProjects\NarutoVR\Library\PackageCache\com.unity.2d.tilemap@1.0.0
+      assetPath: Packages/com.unity.2d.tilemap
+      name: com.unity.2d.tilemap
+      displayName: 2D Tilemap Editor
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: 2D Tilemap Editor is a package that contains editor functionalities
+        for editing Tilemaps.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        compatible:
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - Tilemap
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
+    - packageId: com.unity.ads@3.7.1
+      testable: 0
+      isDirectDependency: 1
+      version: 3.7.1
+      source: 1
+      resolvedPath: C:\Users\Chase Monson\Desktop\UnityProjects\NarutoVR\Library\PackageCache\com.unity.ads@3.7.1
+      assetPath: Packages/com.unity.ads
+      name: com.unity.ads
+      displayName: Advertisement
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        - 4.0.1
+        - 4.1.0
+        - 4.2.1
+        - 4.3.0
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 2.0.0
+        - 2.0.3
+        - 2.0.4
+        - 2.0.7
+        - 2.0.8
+        - 2.3.1
+        - 2.3.2
+        - 3.0.1
+        - 3.0.2
+        - 3.0.3
+        - 3.1.1
+        - 3.2.0
+        - 3.3.0
+        - 3.3.1
+        - 3.4.0
+        - 3.4.1
+        - 3.4.2
+        - 3.4.4
+        - 3.4.5
+        - 3.4.7
+        - 3.4.9
+        - 3.5.0
+        - 3.5.2
+        - 3.6.1
+        - 3.7.0
+        - 3.7.1
+        - 3.7.3
+        - 3.7.5
+        - 4.0.0
+        - 4.0.1
+        - 4.1.0
+        - 4.2.1
+        - 4.3.0
+        verified: 3.7.5
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - ads
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637533483430000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.ads.git
+        revision: 95ec369d16df431f8c9ebbb83c0f65dc4471f07e
+        path: 
+    - packageId: com.unity.analytics@3.5.3
+      testable: 0
+      isDirectDependency: 1
+      version: 3.5.3
+      source: 1
+      resolvedPath: C:\Users\Chase Monson\Desktop\UnityProjects\NarutoVR\Library\PackageCache\com.unity.analytics@3.5.3
+      assetPath: Packages/com.unity.analytics
+      name: com.unity.analytics
+      displayName: Analytics Library
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The Unity Analytics Library contains the Analytics Event Tracker
+        component, the Data Privacy plug-in, and the Standard Events API.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.19
+        - 2.0.5
+        - 2.0.11
+        - 2.0.13
+        - 2.0.14
+        - 2.0.15
+        - 2.0.16
+        - 3.0.5
+        - 3.0.9
+        - 3.1.1
+        - 3.2.0
+        - 3.2.2
+        - 3.2.3
+        - 3.3.0
+        - 3.3.2-preview
+        - 3.3.2
+        - 3.3.4
+        - 3.3.5
+        - 3.4.0
+        - 3.5.3
+        - 3.6.11
+        - 3.6.12
+        - 3.7.1
+        - 3.8.1
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.19
+        - 2.0.5
+        - 2.0.11
+        - 2.0.13
+        - 2.0.14
+        - 2.0.15
+        - 2.0.16
+        - 3.0.5
+        - 3.0.9
+        - 3.1.1
+        - 3.2.0
+        - 3.2.2
+        - 3.2.3
+        - 3.3.0
+        - 3.3.2-preview
+        - 3.3.2
+        - 3.3.4
+        - 3.3.5
+        - 3.4.0
+        - 3.5.3
+        - 3.6.11
+        - 3.6.12
+        - 3.7.1
+        - 3.8.1
+        verified: 3.5.3
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      keywords:
+      - analytics
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637381916200000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.analytics.git
+        revision: 02d361e53eda59ceb7d02ba9bd15ff55a093ad83
+        path: 
     - packageId: com.unity.collab-proxy@1.5.7
       testable: 0
       isDirectDependency: 1
@@ -453,6 +834,196 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
+        path: 
+    - packageId: com.unity.purchasing@3.1.0
+      testable: 0
+      isDirectDependency: 1
+      version: 3.1.0
+      source: 1
+      resolvedPath: C:\Users\Chase Monson\Desktop\UnityProjects\NarutoVR\Library\PackageCache\com.unity.purchasing@3.1.0
+      assetPath: Packages/com.unity.purchasing
+      name: com.unity.purchasing
+      displayName: In App Purchasing
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: "IMPORTANT UPGRADE NOTES:\n\nIf updating from Unity IAP (com.unity.purchasing
+        + the Asset Store plugin) versions 2.x to version 3.x, complete the following
+        actions in order to resolve compilation errors:\n 1. Move IAPProductCatalog.json
+        and BillingMode.json\n\tFROM: Assets/Plugins/UnityPurchasing/Resources/\n\tTO:
+        Assets/Resources/.\n 2. Move AppleTangle.cs and GooglePlayTangle.cs\n\tFROM:
+        Assets/Plugins/UnityPurchasing/generated\n\tTO: Assets/Scripts/UnityPurchasing/generated.\n
+        3. Remove all remaining Asset Store plugin folders and files in Assets/Plugins/UnityPurchasing
+        from your project.\n\nPACKAGE DESCRIPTION:\n\nWith Unity IAP, setting up
+        in-app purchases for your game across multiple app stores has never been
+        easier.\n\nThis package provides:\n\n \u25AA One common API to access all
+        stores for free so you can fully understand and optimize your in-game economy\n
+        \u25AA Automatic coupling with Unity Analytics to enable monitoring and decision-making
+        based on trends in your revenue and purchase data across multiple platforms\n
+        \u25AA Support for iOS, Mac, tvOS, Google Play, Windows, Amazon, and Samsung
+        Galaxy app stores\n \u25AA Support to work with the Unity Distribution Portal
+        to synchronize catalogs and transactions with other app stores\n \u25AA Client-side
+        receipt validation for Apple App Store and Google Play\n\nAfter installing
+        this package, open the Services Window to enable In-App Purchasing to use
+        these features."
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.18
+        - 0.0.19
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 4.0.0
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        - 4.1.3
+        - 4.1.4
+        - 4.1.5
+        - 4.2.0-pre.1
+        - 4.2.0-pre.2
+        - 4.2.1
+        - 4.3.0
+        - 4.4.0
+        compatible:
+        - 0.0.3
+        - 0.0.4
+        - 0.0.5
+        - 0.0.6
+        - 0.0.7
+        - 0.0.8
+        - 0.0.9
+        - 0.0.10
+        - 0.0.11
+        - 0.0.12
+        - 0.0.13
+        - 0.0.14
+        - 0.0.15
+        - 0.0.16
+        - 0.0.17
+        - 0.0.18
+        - 0.0.19
+        - 2.0.0
+        - 2.0.1
+        - 2.0.3
+        - 2.0.5
+        - 2.0.6
+        - 2.1.0
+        - 2.1.1
+        - 2.2.0
+        - 2.2.1
+        - 2.2.2
+        - 3.0.0-pre.3
+        - 3.0.0-pre.4
+        - 3.0.0-pre.5
+        - 3.0.0-pre.6
+        - 3.0.1
+        - 3.0.2
+        - 3.1.0
+        - 3.2.1
+        - 3.2.2
+        - 3.2.3
+        - 4.0.0
+        - 4.0.3
+        - 4.1.0
+        - 4.1.1
+        - 4.1.2
+        - 4.1.3
+        - 4.1.4
+        - 4.1.5
+        - 4.2.0-pre.1
+        - 4.2.0-pre.2
+        - 4.2.1
+        - 4.3.0
+        - 4.4.0
+        verified: 3.1.0
+      dependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.unityanalytics
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.androidjni
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.ui
+        version: 1.0.0
+      - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.unityanalytics
+        version: 1.0.0
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
+      - name: com.unity.modules.androidjni
+        version: 1.0.0
+      keywords:
+      - purchasing
+      - iap
+      - unity
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 0
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637544658080000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.purchasing.git
+        revision: 0fda3405fb97bcc9ca72bf03834fcfee6061bacc
         path: 
     - packageId: com.unity.test-framework@1.1.24
       testable: 0

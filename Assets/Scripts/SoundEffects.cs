@@ -7,7 +7,7 @@ public class SoundEffects : MonoBehaviour
 {
     public AudioSource soundEffect;
 
-    public AudioClip handSealSound, jutsuSound; 
+    public AudioClip handSealSound, jutsuSound, narutoRunningSound; 
 
     public void playHandSealSound()
     {
@@ -20,4 +20,16 @@ public class SoundEffects : MonoBehaviour
         soundEffect.clip = jutsuSound;
         soundEffect.Play(); 
     }
+
+    public void PlayNarutoRunningSound()
+    {
+        soundEffect.clip = narutoRunningSound;
+        soundEffect.Play(); 
+    }
+
+    //public void StopNarutoRunningSound()
+    //{
+    //    soundEffect.clip = narutoRunningSound;
+    //    soundEffect.Stop(); 
+    //}
 }
