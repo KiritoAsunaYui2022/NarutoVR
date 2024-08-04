@@ -57,3 +57,43 @@ The following packages were added:
   com.unity.analytics@3.5.3
   com.unity.purchasing@3.1.0
   com.unity.xr.legacyinputhelpers@2.1.7
+
+=== Mon Jan 16 11:15:26 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ads from version 3.7.1 to 3.7.5
+  com.unity.analytics from version 3.5.3 to 3.6.12
+  com.unity.collab-proxy from version 1.5.7 to 1.17.7
+  com.unity.ide.rider from version 2.0.7 to 3.0.16
+  com.unity.ide.visualstudio from version 2.0.8 to 2.0.16
+  com.unity.ide.vscode from version 1.2.3 to 1.2.5
+  com.unity.purchasing from version 3.1.0 to 4.5.1
+  com.unity.test-framework from version 1.1.24 to 1.1.31
+  com.unity.timeline from version 1.4.8 to 1.6.4
+  com.unity.xr.management from version 4.0.7 to 4.2.0
+  com.unity.xr.oculus from version 1.9.1 to 3.2.2
+
+=== Sat May 25 01:02:37 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.ai.navigation@1.1.5
+The following packages were updated:
+  com.unity.ads from version 3.7.5 to 4.4.2
+  com.unity.analytics from version 3.6.12 to 3.8.1
+  com.unity.collab-proxy from version 1.17.7 to 2.3.1
+  com.unity.ide.rider from version 3.0.16 to 3.0.28
+  com.unity.ide.visualstudio from version 2.0.16 to 2.0.22
+  com.unity.purchasing from version 4.5.1 to 4.11.0
+  com.unity.recorder from version 3.0.3 to 4.0.2
+  com.unity.shadergraph from version 12.1.8 to 14.0.11
+  com.unity.test-framework from version 1.1.31 to 1.1.33
+  com.unity.timeline from version 1.6.4 to 1.7.6
+  com.unity.xr.management from version 4.2.1 to 4.4.0
+  com.unity.xr.oculus from version 3.2.3 to 4.2.0
+  com.unity.xr.openxr from version 1.5.3 to 1.10.0

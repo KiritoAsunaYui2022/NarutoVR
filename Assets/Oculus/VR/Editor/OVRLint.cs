@@ -716,7 +716,7 @@ public class OVRLint : EditorWindow
 
 		var textures = Resources.FindObjectsOfTypeAll<Texture2D>();
 
-		int maxTextureSize = 1024 * (1 << QualitySettings.masterTextureLimit);
+		int maxTextureSize = 1024 * (1 << QualitySettings.globalTextureMipmapLimit);
 		maxTextureSize = maxTextureSize * maxTextureSize;
 
 		for (int i = 0; i < textures.Length; ++i)
@@ -839,16 +839,16 @@ public class OVRLint : EditorWindow
 			AudioImporter importer = AssetImporter.GetAtPath(assetPath) as AudioImporter;
 			if (importer != null)
 			{
-				if (preload != importer.preloadAudioData)
-				{
-					importer.preloadAudioData = preload;
+				//if (preload != importer.preloadAudioData)
+				//{
+				//	importer.preloadAudioData = preload;
 
-					AssetDatabase.ImportAsset(assetPath);
-					if (refreshImmediately)
-					{
-						AssetDatabase.Refresh();
-					}
-				}
+				//	AssetDatabase.ImportAsset(assetPath);
+				//	if (refreshImmediately)
+				//	{
+				//		AssetDatabase.Refresh();
+				//	}
+				//}
 			}
 		}
 	}

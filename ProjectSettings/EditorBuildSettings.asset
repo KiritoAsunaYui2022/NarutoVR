@@ -8,6 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jutsu.unity
     guid: 1191847eb3454584489e5ba2de904a7e
+  - enabled: 1
+    path: Assets/Scenes/Jutsu - Pos.unity
+    guid: 569299a73e4f8864999f18e9206ba19a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 59a3cc902320843458b5c05aaf611b75, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9a1971e9bd3210e4ea32bc37b454b94f, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 30b69bb900c428845963403725e007d4, type: 2}
