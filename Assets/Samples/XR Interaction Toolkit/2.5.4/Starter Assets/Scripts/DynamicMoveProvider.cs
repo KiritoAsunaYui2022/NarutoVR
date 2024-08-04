@@ -169,7 +169,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                     Assert.IsTrue(false, $"Unhandled {nameof(MovementDirection)}={m_RightHandMovementDirection}");
                     break;
             }
-
+            
             // Combine the two poses into the forward source based on the magnitude of input
             var leftHandValue = leftHandMoveAction.action?.ReadValue<Vector2>() ?? Vector2.zero;
             var rightHandValue = rightHandMoveAction.action?.ReadValue<Vector2>() ?? Vector2.zero;

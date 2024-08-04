@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
+using UnityEngine.XR; 
+=======
+>>>>>>> NarutoVR/WizardsMasterBrew
 
 public class JutsuScroll : MonoBehaviour
 {
@@ -84,11 +88,47 @@ public class JutsuScroll : MonoBehaviour
     public GameObject woodDomeR;
     public GameObject woodDomeL;
     public Vector3 woodRight;
+<<<<<<< HEAD
+    public Vector3 woodLeft;
+
+    private InputData inputData;
+
+    public bool
+        // Right is Secondary for some reason 
+        RightPrimaryPressed, // OVRInput.Get(OVRInput.Button.One) //
+        RightSecondaryPressed, // OVRInput.Get(OVRInput.Button.Two) //
+        RightTriggerPressed, // OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) // 
+        RightGripPressed, // OVRInput.Get(OVRInput.Button.SecondaryHandTrigger) // 
+        RightAxisPressed, // OVRInput.Get(OVRInput.Button.SecondaryThumbstick) // 
+
+        RightPrimaryTouch, // OVRInput.Get(OVRInput.Touch.One) //
+        RightSecondaryTouch, // OVRInput.Get(OVRInput.Touch.Two) // 
+        RightTriggerTouch, // OVRInput.Get(OVRInput.Touch.SecondaryIndexTrigger) // 
+        RightAxisTouch, // OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) // 
+
+        // Left is Primary I guess 
+        LeftPrimaryPressed, // OVRInput.Get(OVRInput.Button.Three) // 
+        LeftSecondaryPressed, // OVRInput.Get(OVRInput.Button.Four) // 
+        LeftTriggerPressed, // OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) // 
+        LeftGripPressed, // OVRInput.Get(OVRInput.Button.PrimaryHandTrigger) // 
+        LeftAxisPressed, // OVRInput.Get(OVRInput.Button.PrimaryThumbstick) // 
+
+        LeftPrimaryTouch, // OVRInput.Get(OVRInput.Touch.Three) // 
+        LeftSecondaryTouch, // OVRInput.Get(OVRInput.Touch.Four) // 
+        LeftTriggerTouch, // OVRInput.Get(OVRInput.Touch.PrimaryIdexTrigger) // 
+        LeftAxisTouch; // OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) //
+=======
     public Vector3 woodLeft; 
+>>>>>>> NarutoVR/WizardsMasterBrew
 
 
     void Awake()
     {
+<<<<<<< HEAD
+        inputData = GetComponent<InputData>();
+
+=======
+>>>>>>> NarutoVR/WizardsMasterBrew
         phoenixFlock = new List<Quaternion>();
         for (int i = 0; i < 10; i++)
         {
@@ -111,10 +151,46 @@ public class JutsuScroll : MonoBehaviour
 
     public void Jutsu()
     {
+<<<<<<< HEAD
+        // Right Hand Controller 
+        // Buttons  
+        inputData.rightController.TryGetFeatureValue(CommonUsages.primaryButton, out RightPrimaryPressed);
+        inputData.rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out RightSecondaryPressed);
+        inputData.rightController.TryGetFeatureValue(CommonUsages.triggerButton, out RightTriggerPressed);
+        inputData.rightController.TryGetFeatureValue(CommonUsages.gripButton, out RightGripPressed);
+        inputData.rightController.TryGetFeatureValue(CommonUsages.primary2DAxisClick, out RightAxisPressed);
+
+        // Touch 
+        inputData.rightController.TryGetFeatureValue(CommonUsages.primaryTouch, out RightPrimaryPressed);
+        inputData.rightController.TryGetFeatureValue(CommonUsages.secondaryTouch, out RightSecondaryTouch);
+        RightTriggerTouch = inputData.rightController.TryGetFeatureValue(CommonUsages.trigger, out var RightTriggerTouchValue) && RightTriggerTouchValue > 0; // triggerTouch there seems to be not, translate float to bool I will  
+        inputData.rightController.TryGetFeatureValue(CommonUsages.primary2DAxisTouch, out RightAxisTouch);
+
+
+        // Left Hand Controller 
+        // Buttons 
+        inputData.leftController.TryGetFeatureValue(CommonUsages.primaryButton, out LeftPrimaryPressed);
+        inputData.leftController.TryGetFeatureValue(CommonUsages.secondaryButton, out LeftSecondaryPressed);
+        inputData.leftController.TryGetFeatureValue(CommonUsages.triggerButton, out LeftTriggerPressed);
+        inputData.leftController.TryGetFeatureValue(CommonUsages.gripButton, out LeftGripPressed);
+        inputData.leftController.TryGetFeatureValue(CommonUsages.primary2DAxisClick, out LeftAxisPressed);
+
+        // Touch 
+        inputData.leftController.TryGetFeatureValue(CommonUsages.primaryTouch, out LeftPrimaryPressed);
+        inputData.leftController.TryGetFeatureValue(CommonUsages.secondaryTouch, out LeftSecondaryTouch);
+        RightTriggerTouch = inputData.leftController.TryGetFeatureValue(CommonUsages.trigger, out var LeftTriggerTouchValue) && LeftTriggerTouchValue > 0; // triggerTouch there seems to be not, translate float to bool I will  
+        inputData.leftController.TryGetFeatureValue(CommonUsages.primary2DAxisTouch, out LeftAxisTouch);
+
+
+        if (firePhoenixFlowerStyleJutsu)
+        {
+            while (count >= 0f && RightAxisTouch && RightTriggerPressed && RightGripPressed)
+=======
 
         if (firePhoenixFlowerStyleJutsu)
         {
             while (count >= 0f && OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+>>>>>>> NarutoVR/WizardsMasterBrew
             {
                 count -= .1f;
                 int i = 0;
@@ -262,7 +338,11 @@ public class JutsuScroll : MonoBehaviour
 
         if (fireStyleFireballJutsu)
         {
+<<<<<<< HEAD
+            if (hands.tigerPos && LeftGripPressed && RightGripPressed)
+=======
             if (hands.tigerPos && OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger) && OVRInput.GetDown(OVRInput.Button.SecondaryHandTrigger))
+>>>>>>> NarutoVR/WizardsMasterBrew
             {
                 //Instantiate Fireball Jutsu and set to false  
                 GameObject fireBall1;
@@ -277,7 +357,11 @@ public class JutsuScroll : MonoBehaviour
 
         if(windStyleVacuumBulletJutsu)
         {
+<<<<<<< HEAD
+            if (RightPrimaryPressed && RightTriggerPressed && RightGripPressed)
+=======
             if (OVRInput.GetUp(OVRInput.Button.One) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+>>>>>>> NarutoVR/WizardsMasterBrew
             {
                 astra = ""; 
                 windBulletGust = windBulletGust + 1f;

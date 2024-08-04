@@ -18,10 +18,17 @@ public class NinjaJump : MonoBehaviour
 
     public void ninjaJump()
     {
+<<<<<<< HEAD
+        //if(OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+        //{
+
+        //}
+=======
         if(OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
         {
 
         }
+>>>>>>> NarutoVR/WizardsMasterBrew
     }
 
 
