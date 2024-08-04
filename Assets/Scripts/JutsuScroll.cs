@@ -1,16 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-using UnityEngine.XR; 
-=======
->>>>>>> NarutoVR/WizardsMasterBrew
+using UnityEngine.XR;
 
 public class JutsuScroll : MonoBehaviour
 {
 
-    public HandSeals hands; 
-    public string astra = ""; 
+    public HandSeals hands;
+    public string astra = "";
     public string astra_check = "";
 
 
@@ -18,7 +15,7 @@ public class JutsuScroll : MonoBehaviour
 
     public Transform playerBody;
 
-    public SoundEffects soundEffect; 
+    public SoundEffects soundEffect;
 
 
     //Game Logic 
@@ -30,7 +27,7 @@ public class JutsuScroll : MonoBehaviour
     public bool earthStyleMudWallJutsu = false;
     public bool fireStyleFireballJutsu = false;
     public bool windStyleVacuumBulletJutsu = false;
-    public bool woodStyleTreeDomeJutsu = false; 
+    public bool woodStyleTreeDomeJutsu = false;
 
 
     public bool moveOn = true;
@@ -88,7 +85,6 @@ public class JutsuScroll : MonoBehaviour
     public GameObject woodDomeR;
     public GameObject woodDomeL;
     public Vector3 woodRight;
-<<<<<<< HEAD
     public Vector3 woodLeft;
 
     private InputData inputData;
@@ -117,18 +113,12 @@ public class JutsuScroll : MonoBehaviour
         LeftSecondaryTouch, // OVRInput.Get(OVRInput.Touch.Four) // 
         LeftTriggerTouch, // OVRInput.Get(OVRInput.Touch.PrimaryIdexTrigger) // 
         LeftAxisTouch; // OVRInput.Get(OVRInput.Touch.PrimaryThumbstick) //
-=======
-    public Vector3 woodLeft; 
->>>>>>> NarutoVR/WizardsMasterBrew
 
 
     void Awake()
     {
-<<<<<<< HEAD
         inputData = GetComponent<InputData>();
 
-=======
->>>>>>> NarutoVR/WizardsMasterBrew
         phoenixFlock = new List<Quaternion>();
         for (int i = 0; i < 10; i++)
         {
@@ -151,7 +141,6 @@ public class JutsuScroll : MonoBehaviour
 
     public void Jutsu()
     {
-<<<<<<< HEAD
         // Right Hand Controller 
         // Buttons  
         inputData.rightController.TryGetFeatureValue(CommonUsages.primaryButton, out RightPrimaryPressed);
@@ -185,12 +174,6 @@ public class JutsuScroll : MonoBehaviour
         if (firePhoenixFlowerStyleJutsu)
         {
             while (count >= 0f && RightAxisTouch && RightTriggerPressed && RightGripPressed)
-=======
-
-        if (firePhoenixFlowerStyleJutsu)
-        {
-            while (count >= 0f && OVRInput.Get(OVRInput.Touch.SecondaryThumbstick) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
->>>>>>> NarutoVR/WizardsMasterBrew
             {
                 count -= .1f;
                 int i = 0;
@@ -228,7 +211,7 @@ public class JutsuScroll : MonoBehaviour
 
 
             //          child                          parent
-            rightHand.transform.parent = GameObject.Find("Sphere").transform; 
+            rightHand.transform.parent = GameObject.Find("Sphere").transform;
 
 
             //while (stoneFistRBreak <= 5f && stoneFistLBreak <= 5f)
@@ -255,7 +238,7 @@ public class JutsuScroll : MonoBehaviour
         if (shadowCloneJutsu)
         {
             Vector3 flatAngleForward = new Vector3(playerHead.forward.x, 0f, playerHead.forward.z);
-            Quaternion newFacing = Quaternion.LookRotation(flatAngleForward, Vector3.up); 
+            Quaternion newFacing = Quaternion.LookRotation(flatAngleForward, Vector3.up);
             Vector3 flatAngleRight = new Vector3(flatAngleForward.z, 0f, -flatAngleForward.x);
 
             Vector3 spawnLocationA = playerHead.transform.position + (flatAngleForward) + (flatAngleRight * 4f);
@@ -338,11 +321,7 @@ public class JutsuScroll : MonoBehaviour
 
         if (fireStyleFireballJutsu)
         {
-<<<<<<< HEAD
             if (hands.tigerPos && LeftGripPressed && RightGripPressed)
-=======
-            if (hands.tigerPos && OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger) && OVRInput.GetDown(OVRInput.Button.SecondaryHandTrigger))
->>>>>>> NarutoVR/WizardsMasterBrew
             {
                 //Instantiate Fireball Jutsu and set to false  
                 GameObject fireBall1;
@@ -355,36 +334,32 @@ public class JutsuScroll : MonoBehaviour
         }
 
 
-        if(windStyleVacuumBulletJutsu)
+        if (windStyleVacuumBulletJutsu)
         {
-<<<<<<< HEAD
             if (RightPrimaryPressed && RightTriggerPressed && RightGripPressed)
-=======
-            if (OVRInput.GetUp(OVRInput.Button.One) && OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger) && OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
->>>>>>> NarutoVR/WizardsMasterBrew
             {
-                astra = ""; 
+                astra = "";
                 windBulletGust = windBulletGust + 1f;
 
                 print(windBulletGust);
 
                 GameObject windBulletA;
-                windBulletA = Instantiate(windBullet, fist.position, fist.rotation) as GameObject; 
-                windBulletA.GetComponent<Rigidbody>().AddForce(windBulletA.transform.forward * windBulletVelocity); 
-                
-                if (windBulletGust == 5f) 
+                windBulletA = Instantiate(windBullet, fist.position, fist.rotation) as GameObject;
+                windBulletA.GetComponent<Rigidbody>().AddForce(windBulletA.transform.forward * windBulletVelocity);
+
+                if (windBulletGust == 5f)
                 {
                     print("Windbullets Done: " + windBulletGust);
                     windBulletGust = 0f;
-                    windStyleVacuumBulletJutsu = false; 
+                    windStyleVacuumBulletJutsu = false;
                 }
-                
+
             }
         }
 
 
 
-        if(woodStyleTreeDomeJutsu)
+        if (woodStyleTreeDomeJutsu)
         {
             Vector3 flatAngleForward = new Vector3(playerHead.forward.x, 0f, playerHead.forward.z);
             Quaternion newFacingR = Quaternion.LookRotation(-flatAngleForward, woodRight);
@@ -400,7 +375,7 @@ public class JutsuScroll : MonoBehaviour
             GameObject TreeDomeL = Instantiate(woodDomeL, spawnLocationB, newFacingL);
 
             astra = "";
-            woodStyleTreeDomeJutsu = false; 
+            woodStyleTreeDomeJutsu = false;
         }
     }
 
@@ -441,9 +416,9 @@ public class JutsuScroll : MonoBehaviour
         if (astra == "RatTigerDogOxHareTiger")
         {
             print("Fire Phoenix Jutsu");
-            soundEffect.PlayJutsuSound(); 
+            soundEffect.PlayJutsuSound();
             phoenixClones.Clear();
-            astra = ""; 
+            astra = "";
             moveOn = true;
             firePhoenixFlowerStyleJutsu = true;
 
@@ -476,7 +451,7 @@ public class JutsuScroll : MonoBehaviour
         }
 
         //RamTigerSerpentDogRatOxHorse 
-        if (astra == "RamTigerSerpentDogRatOxHorse") 
+        if (astra == "RamTigerSerpentDogRatOxHorse")
         {
             print("Earth Style Earth Barrier Jutsu");
             //Something?
@@ -507,7 +482,7 @@ public class JutsuScroll : MonoBehaviour
         }
 
         //RatHareDog
-        if(astra == "RatHareDog")
+        if (astra == "RatHareDog")
         {
             print("Wind Bullet Jutsu");
             //Something?
@@ -518,7 +493,7 @@ public class JutsuScroll : MonoBehaviour
 
 
         //RatDogTiger 
-        if(astra == "RatDogTiger")
+        if (astra == "RatDogTiger")
         {
             print("Wood Dome Jutsu");
             //Something?

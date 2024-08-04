@@ -13,22 +13,15 @@ public class NinjaJump : MonoBehaviour
 
     public GameObject rightHand;
     public GameObject leftHand;
-    public GameObject head; 
+    public GameObject head;
 
 
     public void ninjaJump()
     {
-<<<<<<< HEAD
         //if(OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
         //{
 
         //}
-=======
-        if(OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
-        {
-
-        }
->>>>>>> NarutoVR/WizardsMasterBrew
     }
 
 
